@@ -1,0 +1,52 @@
+/* The Setup */
+
+.parallax {
+  perspective: 1px;
+  height: auto;
+  -webkit-perspective: 1px;
+  margin-left: 0;
+  margin-bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__group_long {
+  position: relative;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: presevre-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  z-index: 2;
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+  z-index: 1;
+}
+
+.parallax__layer--deep {
+  transform: translateZ(-2px) translateY(-50%) scale(3);
+  -webkit-transform: translateZ(-2px) translateX(-20px) translateY(50%) scale(3);
+}
+
+/* Style the Layers*/

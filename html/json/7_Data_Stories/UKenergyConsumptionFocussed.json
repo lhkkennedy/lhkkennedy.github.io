@@ -1,0 +1,150 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "Share of Total Assets Held by the Top 1% and the Bottom 50% from 1989 to 2021",
+  
+    "title": {
+    "text": "% Share of Total Assets",
+    "subtitle": "Assets Held by the Top 1% (red) - Assets Held by the Bottom 50% (gray)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+    "width":300,
+    "height":350,
+  
+    "data": {
+      "url": "html/json/7_Data_Stories/UKenergyConsumptionFocussed.csv",
+      "format": {"type": "csv"}
+    },
+  
+    "encoding": {
+      
+      "x": {
+        "field": "DATE", 
+        "type": "ordinal",
+        "title": "year",
+        "timeUnit": "yearmonthdate",
+        "scale": {"domainMin": {"year": 2010, "month": 1, "date": 1}},
+        "axis": {
+          "format": "%Y",
+          "labelOverlap": "greedy",
+          "labelSeparation": 24,
+          "ticks":false
+        }
+        },
+  
+      "y": {
+        "type": "quantitative",
+        "scale": {"domain": [0, 45]},
+        "title": "Percentage share of total assets"
+        }
+    },
+  
+    "layer":[
+
+      {"mark":{ 
+      "type": "line",
+      "color":"black",
+      "strokeWidth": 4,
+      "smooth": true},
+      "transform": [{
+        "window": [{
+            "op": "mean",
+            "field": "Coal",
+            "as": "avgCoal"}],
+        "frame": [-6, 6]
+    }],
+      "encoding": {
+        "y": {"field": "avgCoal"}
+      }
+    },
+  
+    {"mark":{ 
+        "type": "line",
+        "color":"orange",
+        "strokeWidth": 4,
+        "smooth": true},
+        "transform": [{
+          "window": [{
+              "op": "mean",
+              "field": "Bioenergy & waste",
+              "as": "avgBio"}],
+          "frame": [-6, 6]
+      }],
+        "encoding": {
+          "y": {"field": "avgBio"}
+        }
+      },
+      
+    {"mark":{ 
+        "type": "line",
+        "color":"gray",
+        "strokeWidth": 4,
+        "smooth": true},
+        "transform": [{
+          "window": [{
+              "op": "mean",
+              "field": "Petroleum",
+              "as": "avgPetrol"}],
+          "frame": [-6, 6]
+      }],
+        "encoding": {
+          "y": {"field": "avgPetrol"}
+        }
+      },
+
+    {"mark":{ 
+        "type": "line",
+        "color":"blue",
+        "strokeWidth": 4,
+        "smooth": true},
+        "transform": [{
+          "window": [{
+              "op": "mean",
+              "field": "Natural gas",
+              "as": "avgGas"}],
+          "frame": [-6, 6]
+      }],
+        "encoding": {
+          "y": {"field": "avgGas"}
+        }
+      },
+
+    {"mark":{ 
+        "type": "line",
+        "color":"Yellow",
+        "strokeWidth": 4,
+        "smooth": true},
+        "transform": [{
+          "window": [{
+              "op": "mean",
+              "field": "Nuclear",
+              "as": "avgNuc"}],
+          "frame": [-6, 6]
+      }],
+        "encoding": {
+          "y": {"field": "avgNuc"}
+        }
+      },
+
+    {"mark":{ 
+        "type": "line",
+        "color":"green",
+        "strokeWidth": 4,
+        "smooth": true},
+        "transform": [{
+          "window": [{
+              "op": "mean",
+              "field": "Wind, solar and hydro",
+              "as": "avgRenew"}],
+          "frame": [-6, 6]
+      }],
+        "encoding": {
+          "y": {"field": "avgRenew"}
+        }
+      }
+    ]  
+  }
