@@ -289,9 +289,15 @@ Slide In Panel - by CodyHouse.co
           transition-delay: 0s;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 500px) {
   .cd-panel__container {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .cd-panel__container {
+    width: 85%;
   }
 }
 
@@ -684,6 +690,7 @@ html {
   width: 80%;
 }
 
+
 .card-blogEntry.panel:nth-child(1) {
   margin-top: 70px;
 }
@@ -922,12 +929,13 @@ a{
 }
 
 
-@media (min-width:500px) {
+@media (max-width:500px) {
   .col-blogEntry {
     width: 100%;
     float: left
   }
   .card-blogEntry {
+    width: auto;
     margin: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -962,5 +970,14 @@ a{
 
   .col-blogEntry.panel {
     width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  .card-blogEntry.panel{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
   }
 }
