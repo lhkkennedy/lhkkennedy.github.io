@@ -78,7 +78,7 @@ Slide In Panel - by CodyHouse.co
 
 .cd-panel__header {
   position: fixed;
-  width: 90%;
+  width: 100%;
   height: 50px;
   line-height: 30px;
   background: rgba(255, 255, 255, 0.96);
@@ -92,6 +92,17 @@ Slide In Panel - by CodyHouse.co
   -webkit-transform: translateY(-50px);
       -ms-transform: translateY(-50px);
           transform: translateY(-50px);
+}
+
+@media only screen and (min-width: 500px) {
+  .cd-panel__header {
+    width: 100%;  
+  }
+
+  .cd-panel__header h1 {
+    padding-left: 0;
+  }
+
 }
 
 .cd-panel__header h1 {
@@ -117,7 +128,7 @@ Slide In Panel - by CodyHouse.co
           transform: translateY(0px);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .cd-panel__header {
     width: 70%;
   }
@@ -248,8 +259,8 @@ Slide In Panel - by CodyHouse.co
 
 .cd-panel__container {
   position: fixed;
-  width: 100%;
   height: 100%;
+  width: 90;
   top: 0;
   background: #dbe2e9;
   z-index: 1;
@@ -278,7 +289,13 @@ Slide In Panel - by CodyHouse.co
           transition-delay: 0s;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
+  .cd-panel__container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
   .cd-panel__container {
     width: 70%;
   }
@@ -646,35 +663,6 @@ html {
   background-color: #353839;
 }
 
-@media (max-width:550px) {
-  .col-blogEntry {
-    width: 100%;
-    float: left;
-  }
-  .blog-details {
-    margin: 0;
-    display: block;
-  }
-  .blog-description {
-    margin: 0;
-    display: block;
-  }
-  #navbar {
-    width: 100%;
-  }
-}
-
-@media (min-width:993px) {
-  .col-blogEntry{
-    width: 66.66666%;
-    float: left;
-  }
-
-  .col-blogEntry.panel {
-    width: 100%;
-  }
-}
-
 .card-blogEntry{
   padding: 40px;
   margin: 40px;
@@ -931,4 +919,48 @@ a{
   content: "";
   clear: both;
   width: 100%;
+}
+
+
+@media (min-width:500px) {
+  .col-blogEntry {
+    width: 100%;
+    float: left
+  }
+  .card-blogEntry {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .blog-details {
+    margin: 0;
+    display: block;
+  }
+  .blog-description {
+    margin: 0;
+    display: block;
+  }
+  #navbar {
+    width: 100%;
+  }
+  .intro-menu {
+    width: 100%;
+  }
+  .intro-card {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:600px) {
+  .col-blogEntry{
+    width: 66.66666%;
+    float: left;
+  }
+
+  .col-blogEntry.panel {
+    width: 100%;
+  }
 }
