@@ -128,17 +128,7 @@ Slide In Panel - by CodyHouse.co
           transform: translateY(0px);
 }
 
-@media only screen and (min-width: 600px) {
-  .cd-panel__header {
-    width: 70%;
-  }
-}
 
-@media only screen and (min-width: 1170px) {
-  .cd-panel__header {
-    width: 50%;
-  }
-}
 
 .cd-panel__close {
   position: absolute;
@@ -260,7 +250,7 @@ Slide In Panel - by CodyHouse.co
 .cd-panel__container {
   position: fixed;
   height: 100%;
-  width: 90;
+  width: 100%;
   top: 0;
   background: #dbe2e9;
   z-index: 1;
@@ -289,15 +279,13 @@ Slide In Panel - by CodyHouse.co
           transition-delay: 0s;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 550px) {
   .cd-panel__container {
-    width: 100%;
+    width: 90%;
   }
-}
 
-@media only screen and (min-width: 500px) {
-  .cd-panel__container {
-    width: 85%;
+  .cd-panel__header {
+    width: 90%;
   }
 }
 
@@ -305,10 +293,18 @@ Slide In Panel - by CodyHouse.co
   .cd-panel__container {
     width: 70%;
   }
+
+  .cd-panel__header {
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 1170px) {
   .cd-panel__container {
+    width: 50%;
+  }
+
+  .cd-panel__header {
     width: 50%;
   }
 }
@@ -929,7 +925,7 @@ a{
 }
 
 
-@media (max-width:500px) {
+@media (max-width:550px) {
   .col-blogEntry {
     width: 100%;
     float: left
@@ -962,7 +958,7 @@ a{
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:700px) {
   .col-blogEntry{
     width: 66.66666%;
     float: left;
