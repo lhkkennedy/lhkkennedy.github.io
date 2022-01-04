@@ -1,464 +1,463 @@
 <!doctype html>
-
 <head>
-
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/myStyle.css" />
-	<link rel="stylesheet" href="css/parallax.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<!-- Vega JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/myStyle.css" />
+   <link rel="stylesheet" href="css/parallax.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+   <!-- Vega JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
 </head>
-
 <body>
-	<!-- NAVBAR -->
-	<div id="navbar">
-		<a class="navbtn" href="#home">Home</a>
-		<a href="#news">News</a>
-		<a href="#contact">Contact</a>
-	</div>
-
-
-	<!-- START OF PARALLAX CONTENT -->
-	<div class="parallax" id="parallax">
-
-		<div class="parallax__group">
-
-			<!-- Background Slider -->
-			<div class="parallax__layer parallax__layer--deep">
-				<!-- Background Slider -->
-				<section class="sect-banner">
-					<ul class="kf-slider">
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</section>
-			</div>
-
-			<!-- Vertically Centered Title Content -->
-			<div class="parallax__layer parallax__layer--back">
-				<section class="sect-banner">
-					<div class="v-center">
-						<h1>Data Science Blog</h1>
-						<p>This is me testing gthub</p>
-					</div>
-				</section>
-			</div>
-
-			<!-- Start of Content List -->
-			<div class="parallax__layer parallax__layer--base">
-
-				<!-- Grid -->
-				<div class="content-grid">
-					<div class="row">
-
-						<!-- Blog entries -->
-						<div class="col-blogEntry">
-
-							<!-- Blog entry 1 -->
-							<a name="anchor-1-Embedding"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/1_Embedding.jpg" alt="UK COVID Heat Graph">
-								<div class="blog-details">
-									<h3><b>Embedding Data</b></h3>
-									<h5>Week 2, <span class="date">4th October, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>Embed two charts that were given in class.</p>
-									<p>Embed one taken from the repository of charts on rapidcharts.io.</p>
-									<a class="button js-cd-panel-trigger" data-panel="1-Embedding"><b>SEE CHARTS
-											»</b></a>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Blog entry 2 -->
-							<a name="anchor-2-Hosting"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/2_Hosting_Data.jpg"
-									alt="UK COVID Regional Line Chart">
-								<div class="blog-details">
-									<h3><b>Hosting Data</b></h3>
-									<h5>Week 3, <span class="date">11th October, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>Embed two charts of own design</p>
-									<p>a) from a given API</p>
-									<p>b) from the same/related data saved to my GitHub</p>
-									<a class="button js-cd-panel-trigger" data-panel="2-Hosting"><b>SEE CHARTS
-											>></b></a>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Blog entry 3 -->
-							<a name="anchor-3-Editing"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/3_Editing_Data.jpg" alt="">
-								<div class="blog-details">
-									<h3><b>Editing Data</b></h3>
-									<h5>Week 4, <span class="date">18th October, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>a) Embed one chart where the data is edited (add observation, add a series,
-										create a new series).</p>
-									<p>b) Embed a chart where the data is 'in-line' JSON. Minimum 5 observations.</p>
-									<a class="button js-cd-panel-trigger" data-panel="3-Editing"><b>SEE CHARTS
-											>></b></a>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Blog entry 4 -->
-							<a name="anchor-4-API"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/4_API.jpg" alt="">
-								<div class="blog-details">
-									<h3><b>API driven charts</b></h3>
-									<h5>Week 5, <span class="date">25th October, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>Embed two charts from two seperate APIs that you sign up for & gain access to.
-									</p>
-									<a class="button js-cd-panel-trigger" data-panel="4-API"><b>SEE CHARTS >></b></a>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Blog entry 5 -->
-							<a name="anchor-5-Loops"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/5_Loops.jpg" alt="">
-								<div class="blog-details">
-									<h3><b>Loops and APIs</b></h3>
-									<h5>Week 6, <span class="date">1st November, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>Use a loop to batch download data.</p>
-									<p>Download code from an API using fetch in Python and chart data.</p>
-									<a class="button js-cd-panel-trigger" data-panel="5-Loops"><b>SEE CHARTS >></b></a>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Blog entry 6 -->
-							<a name="anchor-6-Scraper"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/6_Scraper.jpg" alt="">
-								<div class="blog-details">
-									<h3><b>Scraping Data</b></h3>
-									<h5>Week 7, <span class="date">8th November, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>Build a scraper in Python.</p>
-									<p>Save and chart the results.</p>
-									<a class="button js-cd-panel-trigger" data-panel="6-Scraper"><b>SEE CHARTS
-											>></b></a>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Blog entry 7 -->
-							<a name="anchor-7-Data-Stories"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/7_Data_Stories.jpg" alt="">
-								<div class="blog-details">
-									<h3><b>Data Stories</b></h3>
-									<h5>Week 8, <span class="date">15th November, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>Attend one morning of Talking Economics and construct a chart that would:</p>
-									<p>a) support or</p>
-									<p>b) refute an argument made.</p>
-									<a class="button js-cd-panel-trigger" data-panel="7-Stories"><b>SEE CHARTS
-											>></b></a>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Blog entry 8 -->
-							<a name="anchor-8-Analytics"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/8_Advanced_Analytics.jpg" alt="">
-								<div class="blog-details">
-									<h3><b>Advanced Analystics</b></h3>
-									<h5>Week 9, <span class="date">22nd November, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>a) Build a chart with data from two seperate sources.</p>
-									<p>b) Plot using correlation, regressions or some other technique.</p>
-									<p>c) Build and embed a chart that uses advanced statistical methods testing
-										causality or distribution.</p>
-									<a class="button js-cd-panel-trigger" data-panel="8-Advanced"><b>SEE CHARTS
-											>></b></a>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Blog entry 9 -->
-							<a name="anchor-9-Interactivity"></a>
-							<div class="card-blogEntry">
-								<img class="blog-thumbnail" src="images/9_Interactivity.jpg" alt="">
-								<div class="blog-details">
-									<h3><b>Interactivity</b></h3>
-									<h5>Week 10, <span class="date">29th November, 2021</span></h5>
-								</div>
-								<div class="blog-description">
-									<strong>Tasks:</strong>
-									<p>Build and embed two interactive charts</p>
-									<a class="button js-cd-panel-trigger" data-panel="9-Interactivity"><b>SEE CHARTS
-											>></b></a>
-								</div>
-							</div>
-							<hr>
-							<!-- END BLOG ENTRIES -->
-						</div>
-
-						<!-- Introduction Menu -->
-						<div class="intro-menu">
-
-							<!-- About Card -->
-							<div class="intro-card">
-								<div class="intro-card-heading">
-									<h4><b>My Data Science Course</b></h4>
-								</div>
-								<div class="about-card-text">
-									<img class="profile-img" src="images/paranormal distribution.jpg">
-									<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of
-										love and a interest of lorem ipsum and mauris neque quam blog. I want to share
-										my world with you.</p>
-								</div>
-							</div>
-							<hr>
-
-							<!-- Posts -->
-							<div class="intro-card list">
-								<div class="intro-card-heading">
-									<h4><b>Top Posts</b></h4>
-								</div>
-								<ul class="ul-posts hoverable">
-									<li><a href="#anchor-1-Embedding">
-											<img src="images/1_Embedding.jpg" alt="Image">
-											<p>Embedding</p>
-											<p>Week 2</p>
-										</a></li>
-									<li><a href="#anchor-2-Hosting">
-											<img src="images/2_Hosting_Data.jpg" alt="Image">
-											<p>Hosting</p>
-											<p>Week 3</p>
-										</a></li>
-									<li><a href="#anchor-3-Editing">
-											<img src="images/3_Editing_Data.jpg" alt="Image">
-											<p>Editing</p>
-											<p>Week 4</p>
-										</a></li>
-									<li><a href="#anchor-4-API">
-											<img src="images/4_API.jpg" alt="Image">
-											<p>API</p>
-											<p>Week 5</p>
-										</a></li>
-									<li><a href="#anchor-5-Loops">
-											<img src="images/5_Loops.jpg" alt="Image">
-											<p>Loops</p>
-											<p>Week 6</p>
-										</a></li>
-									<li><a href="#anchor-6-Scraper">
-											<img src="images/6_Scraper.jpg" alt="Image">
-											<p>Scraper</p>
-											<p>Week 7</p>
-										</a></li>
-									<li><a href="#anchor-7-Data-Stories">
-											<img src="images/7_Data_Stories.jpg" alt="Image">
-											<p>Data Stories</p>
-											<p>Week 8</p>
-										</a></li>
-									<li><a href="#anchor-8-Analytics">
-											<img src="images/8_Advanced_Analytics.jpg" alt="Image">
-											<p>Advanced Analystics</p>
-											<p>Week 9</p>
-										</a></li>
-									<li><a href="#anchor-9-Interactivity">
-											<img src="images/9_Interactivity.jpg" alt="Image">
-											<p>Interactivity</p>
-											<p>Week 10</p>
-										</a></li>
-								</ul>
-							</div>
-
-							<!-- Labels / tags -->
-							<div class="intro-card">
-								<div class="intro-card-heading">
-									<h4><b>Tags</b></h4>
-								</div>
-								<div class="about-card-text">
-									<p>
-										<a class="tag-button">HTML</a>
-										<a class="tag-button">CSS</a>
-										<a class="tag-button">API</a>
-										<a class="tag-button">Data Science</a>
-										<a class="tag-button">Charts</a>
-									</p>
-								</div>
-							</div>
-
-							<!-- End of Intro Menu -->
-						</div>
-
-						<!-- End of Row -->
-					</div>
-					<!-- End of Grid-->
-				</div>
-
-				<!-- TODO: get rid of w3 css -->
-				<!-- Footer -->
-				<footer class="page-footer">
-					<button class="button-footer">« Previous</button>
-					<button class="button-footer">Next »</button>
-					<p>All References Here: <a href="html/reference_page.html">Link</a></p>
-				</footer>
-
-				<!-- End of Parallax Base Layer-->
-			</div>
-
-			<!-- End of Parallax Group -->
-		</div>
-
-		<!-- End of Parallax -->
-	</div>
-
-	<!-- 1. Embedding Panel -->
-	<div class="cd-panel cd-panel--from-right js-cd-panel-1-Embedding">
-		<header class="cd-panel__header">
-			<h1>1. Embedding Data</h1>
-			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
-		</header>
-		<div class="cd-panel__container">
-			<div class="cd-panel__content">
-				<div class="col-blogEntry panel">
-
-					<!-- Blog entry 1 -->
-					<div class="card-blogEntry panel">
-						<div id="firstChart" class="chart center">
-							<script>
-								var myChart1 = "html/json/1_Embedding/chart1_covidUKRegions.json";
-								vegaEmbed('#firstChart', myChart1);
-							</script>
-						</div>
-						<div class="blog-details">
-							<h3><b>Example Graphs</b></h3>
-						</div>
-						<div class="blog-description">
-							<h5>Given to show how to use vega to display graph <br>
-								<span class="date">4th October, 2021</span>
-							</h5>
-							<h6>After starting our GitHub repositories and pages where we will host all of our charts for the profile. Each will represent a different skill crucial to data science. 
-								This week we learn the basics of manipulating html and css to embed charts that have been already coded in json. The html page uses scripts from vega vega-lite and vega-embed to create visualisations from a json spec. Data can be imported from a url to an API or hosted locally in a seperate file. 
-								This first graph imports data directly from the UK gov coronavirus API and as such updates on reload whenever new data is available to fetch.</h6>
-						</div>
-					</div>
-					<hr>
-
-					<!-- Blog entry 2 -->
-					<div class="card-blogEntry panel">
-						<div id="secondChart" class="chart center">
-							<script>
-								var myChart2 = "html/json/1_Embedding/chart2_ukProductivity.json";
-								vegaEmbed('#secondChart', myChart2);
-							</script>
-						</div>
-						<div class="blog-details">
-							<h3><b>Historical Data</b></h3>
-						</div>
-						<div class="blog-description">
-							<h5>Data was sourced from ONS as csv file</h5>
-							<h6>This second graph, also given before hand, is pulling data from a github repository as a csv file.
-								The html embed script looks like this:</h6>
-
-<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+   <!-- NAVBAR -->
+   <div id="navbar">
+      <a class="navbtn" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+   </div>
+   <!-- START OF PARALLAX CONTENT -->
+   <div class="parallax" id="parallax">
+      <div class="parallax__group">
+         <!-- Background Slider -->
+         <div class="parallax__layer parallax__layer--deep">
+            <!-- Background Slider -->
+            <section class="sect-banner">
+               <ul class="kf-slider">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+               </ul>
+            </section>
+         </div>
+         <!-- Vertically Centered Title Content -->
+         <div class="parallax__layer parallax__layer--back">
+            <section class="sect-banner">
+               <div class="v-center">
+                  <h1>Data Science Blog</h1>
+                  <p>This is me testing gthub</p>
+               </div>
+            </section>
+         </div>
+         <!-- Start of Content List -->
+         <div class="parallax__layer parallax__layer--base">
+            <!-- Grid -->
+            <div class="content-grid">
+               <div class="row">
+                  <!-- Blog entries -->
+                  <div class="col-blogEntry">
+                     <!-- Blog entry 1 -->
+                     <a name="anchor-1-Embedding"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/1_Embedding.jpg" alt="UK COVID Heat Graph">
+                        <div class="blog-details">
+                           <h3><b>Embedding Data</b></h3>
+                           <h5>Week 2, <span class="date">4th October, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>Embed two charts that were given in class.</p>
+                           <p>Embed one taken from the repository of charts on rapidcharts.io.</p>
+                           <a class="button js-cd-panel-trigger" data-panel="1-Embedding"><b>SEE CHARTS
+                           »</b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 2 -->
+                     <a name="anchor-2-Hosting"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/2_Hosting_Data.jpg"
+                           alt="UK COVID Regional Line Chart">
+                        <div class="blog-details">
+                           <h3><b>Hosting Data</b></h3>
+                           <h5>Week 3, <span class="date">11th October, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>Embed two charts of own design</p>
+                           <p>a) from a given API</p>
+                           <p>b) from the same/related data saved to my GitHub</p>
+                           <a class="button js-cd-panel-trigger" data-panel="2-Hosting"><b>SEE CHARTS
+                           >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 3 -->
+                     <a name="anchor-3-Editing"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/3_Editing_Data.jpg" alt="">
+                        <div class="blog-details">
+                           <h3><b>Editing Data</b></h3>
+                           <h5>Week 4, <span class="date">18th October, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>a) Embed one chart where the data is edited (add observation, add a series,
+                              create a new series).
+                           </p>
+                           <p>b) Embed a chart where the data is 'in-line' JSON. Minimum 5 observations.</p>
+                           <a class="button js-cd-panel-trigger" data-panel="3-Editing"><b>SEE CHARTS
+                           >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 4 -->
+                     <a name="anchor-4-API"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/4_API.jpg" alt="">
+                        <div class="blog-details">
+                           <h3><b>API driven charts</b></h3>
+                           <h5>Week 5, <span class="date">25th October, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>Embed two charts from two seperate APIs that you sign up for & gain access to.
+                           </p>
+                           <a class="button js-cd-panel-trigger" data-panel="4-API"><b>SEE CHARTS >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 5 -->
+                     <a name="anchor-5-Loops"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/5_Loops.jpg" alt="">
+                        <div class="blog-details">
+                           <h3><b>Loops and APIs</b></h3>
+                           <h5>Week 6, <span class="date">1st November, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>Use a loop to batch download data.</p>
+                           <p>Download code from an API using fetch in Python and chart data.</p>
+                           <a class="button js-cd-panel-trigger" data-panel="5-Loops"><b>SEE CHARTS >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 6 -->
+                     <a name="anchor-6-Scraper"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/6_Scraper.jpg" alt="">
+                        <div class="blog-details">
+                           <h3><b>Scraping Data</b></h3>
+                           <h5>Week 7, <span class="date">8th November, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>Build a scraper in Python.</p>
+                           <p>Save and chart the results.</p>
+                           <a class="button js-cd-panel-trigger" data-panel="6-Scraper"><b>SEE CHARTS
+                           >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 7 -->
+                     <a name="anchor-7-Data-Stories"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/7_Data_Stories.jpg" alt="">
+                        <div class="blog-details">
+                           <h3><b>Data Stories</b></h3>
+                           <h5>Week 8, <span class="date">15th November, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>Attend one morning of Talking Economics and construct a chart that would:</p>
+                           <p>a) support or</p>
+                           <p>b) refute an argument made.</p>
+                           <a class="button js-cd-panel-trigger" data-panel="7-Stories"><b>SEE CHARTS
+                           >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 8 -->
+                     <a name="anchor-8-Analytics"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/8_Advanced_Analytics.jpg" alt="">
+                        <div class="blog-details">
+                           <h3><b>Advanced Analystics</b></h3>
+                           <h5>Week 9, <span class="date">22nd November, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>a) Build a chart with data from two seperate sources.</p>
+                           <p>b) Plot using correlation, regressions or some other technique.</p>
+                           <p>c) Build and embed a chart that uses advanced statistical methods testing
+                              causality or distribution.
+                           </p>
+                           <a class="button js-cd-panel-trigger" data-panel="8-Advanced"><b>SEE CHARTS
+                           >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 9 -->
+                     <a name="anchor-9-Interactivity"></a>
+                     <div class="card-blogEntry">
+                        <img class="blog-thumbnail" src="images/9_Interactivity.jpg" alt="">
+                        <div class="blog-details">
+                           <h3><b>Interactivity</b></h3>
+                           <h5>Week 10, <span class="date">29th November, 2021</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>Build and embed two interactive charts</p>
+                           <a class="button js-cd-panel-trigger" data-panel="9-Interactivity"><b>SEE CHARTS
+                           >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- END BLOG ENTRIES -->
+                  </div>
+                  <!-- Introduction Menu -->
+                  <div class="intro-menu">
+                     <!-- About Card -->
+                     <div class="intro-card">
+                        <div class="intro-card-heading">
+                           <h4><b>My Data Science Course</b></h4>
+                        </div>
+                        <div class="about-card-text">
+                           <img class="profile-img" src="images/paranormal distribution.jpg">
+                           <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of
+                              love and a interest of lorem ipsum and mauris neque quam blog. I want to share
+                              my world with you.
+                           </p>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Posts -->
+                     <div class="intro-card list">
+                        <div class="intro-card-heading">
+                           <h4><b>Top Posts</b></h4>
+                        </div>
+                        <ul class="ul-posts hoverable">
+                           <li>
+                              <a href="#anchor-1-Embedding">
+                                 <img src="images/1_Embedding.jpg" alt="Image">
+                                 <p>Embedding</p>
+                                 <p>Week 2</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-2-Hosting">
+                                 <img src="images/2_Hosting_Data.jpg" alt="Image">
+                                 <p>Hosting</p>
+                                 <p>Week 3</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-3-Editing">
+                                 <img src="images/3_Editing_Data.jpg" alt="Image">
+                                 <p>Editing</p>
+                                 <p>Week 4</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-4-API">
+                                 <img src="images/4_API.jpg" alt="Image">
+                                 <p>API</p>
+                                 <p>Week 5</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-5-Loops">
+                                 <img src="images/5_Loops.jpg" alt="Image">
+                                 <p>Loops</p>
+                                 <p>Week 6</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-6-Scraper">
+                                 <img src="images/6_Scraper.jpg" alt="Image">
+                                 <p>Scraper</p>
+                                 <p>Week 7</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-7-Data-Stories">
+                                 <img src="images/7_Data_Stories.jpg" alt="Image">
+                                 <p>Data Stories</p>
+                                 <p>Week 8</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-8-Analytics">
+                                 <img src="images/8_Advanced_Analytics.jpg" alt="Image">
+                                 <p>Advanced Analystics</p>
+                                 <p>Week 9</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-9-Interactivity">
+                                 <img src="images/9_Interactivity.jpg" alt="Image">
+                                 <p>Interactivity</p>
+                                 <p>Week 10</p>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- Labels / tags -->
+                     <div class="intro-card">
+                        <div class="intro-card-heading">
+                           <h4><b>Tags</b></h4>
+                        </div>
+                        <div class="about-card-text">
+                           <p>
+                              <a class="tag-button">HTML</a>
+                              <a class="tag-button">CSS</a>
+                              <a class="tag-button">API</a>
+                              <a class="tag-button">Data Science</a>
+                              <a class="tag-button">Charts</a>
+                           </p>
+                        </div>
+                     </div>
+                     <!-- End of Intro Menu -->
+                  </div>
+                  <!-- End of Row -->
+               </div>
+               <!-- End of Grid-->
+            </div>
+            <!-- Footer -->
+            <footer class="page-footer">
+               <button class="button-footer">« Previous</button>
+               <button class="button-footer">Next »</button>
+               <p>All References Here: <a href="html/reference_page.html">Link</a></p>
+            </footer>
+            <!-- End of Parallax Base Layer-->
+         </div>
+         <!-- End of Parallax Group -->
+      </div>
+      <!-- End of Parallax -->
+   </div>
+   <!-- 1. Embedding Panel -->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-1-Embedding">
+      <header class="cd-panel__header">
+         <h1>1. Embedding Data</h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div id="firstChart" class="chart center">
+                     <script>
+                        var myChart1 = "html/json/1_Embedding/chart1_covidUKRegions.json";
+                        vegaEmbed('#firstChart', myChart1);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Example Graphs</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Given to show how to use vega to display graph <br>
+                        <span class="date">4th October, 2021</span>
+                     </h5>
+                     <h6>After starting our GitHub repositories and pages where we will host all of our charts for the profile. Each will represent a different skill crucial to data science. 
+                        This week we learn the basics of manipulating html and css to embed charts that have been already coded in json. The html page uses scripts from vega vega-lite and vega-embed to create visualisations from a json spec. Data can be imported from a url to an API or hosted locally in a seperate file. 
+                        This first graph imports data directly from the UK gov coronavirus API and as such updates on reload whenever new data is available to fetch.
+                     </h6>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div id="secondChart" class="chart center">
+                     <script>
+                        var myChart2 = "html/json/1_Embedding/chart2_ukProductivity.json";
+                        vegaEmbed('#secondChart', myChart2);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Historical Data</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from ONS as csv file</h5>
+                     <h6>This second graph, also given before hand, is pulling data from a github repository as a csv file.
+                        The html embed script looks like this:
+                     </h6>
+                     <!-- HTML generated using hilite.me -->
+                     <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <table>
+                           <tr>
+                              <td>
+                                 <pre style="margin: 0; line-height: 125%">1
 2
 3
 4
 5
-6</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #333333">&lt;</span>div <span style="color: #007020">id</span><span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;firstChart&quot;</span> class<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;chart center&quot;</span><span style="color: #333333">&gt;</span>
+6</pre>
+                              </td>
+                              <td>
+                                 <pre style="margin: 0; line-height: 125%"><span style="color: #333333">&lt;</span>div <span style="color: #007020">id</span><span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;firstChart&quot;</span> class<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;chart center&quot;</span><span style="color: #333333">&gt;</span>
     <span style="color: #333333">&lt;</span>script<span style="color: #333333">&gt;</span>
         var myChart1 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;html/json/1_Embedding/chart1_covidUKRegions.json&quot;</span>;
         vegaEmbed(<span style="background-color: #fff0f0">&#39;#firstChart&#39;</span>, myChart1);
     <span style="color: #333333">&lt;/</span>script<span style="color: #333333">&gt;</span>
 <span style="color: #333333">&lt;/</span>div<span style="color: #333333">&gt;</span>
-</pre></td></tr></table></div>
-
-
-						</div>
-					</div>
-					<hr>
-
-					<!-- Blog entry 3 -->
-					<div class="card-blogEntry panel">
-						<div class="chart center" id="thirdChart">
-							<script>
-								var myChart3 = "html/json/1_Embedding/chart3_givenBitcoin.json";
-								vegaEmbed('#thirdChart', myChart3);
-							</script>
-						</div>
-						<div class="blog-details">
-							<h3><b>Bitcoin chart taken from rapidcharts.io</b></h3>
-						</div>
-						<div class="blog-0description">
-							<h5>Data was sourced from Coinbase via FRED</h5>
-							<h6>The third graph was fetched from rapidcharts.io. By using the inspect tool I was able to pull the json spec and embed that here.</h6>
-						</div>
-					</div>
-					<hr>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- 2. Hosting Panel -->
-	<div class="cd-panel cd-panel--from-right js-cd-panel-2-Hosting">
-		<header class="cd-panel__header">
-			<h1>2. Hosting Data</h1>
-			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
-		</header>
-		<div class="cd-panel__container">
-			<div class="cd-panel__content">
-				<div class="col-blogEntry panel">
-
-					<!-- Blog entry 1 -->
-					<div class="card-blogEntry panel">
-						<div id="fourthChart" class="chart center">
-							<script>
-								var myChart4 = "html/json/2_Hosting/chart1_givenCovidCases.json";
-								vegaEmbed('#fourthChart', myChart4);
-							</script>
-						</div>
-						<div class="blog-details">
-							<h3><b>Vega Editor</b></h3>
-						</div>
-						<div class="blog-description">
-							<h5>Data was sourced from an ONS API and filtered to only include Birmingham, Croydon, Manchester, Sheffield and Brighton. <br>
-								<span class="date">11th October, 2021</span>
-							</h5>
-							<h6>
-								Progressing from the specs we saw in the examples, I was tasked to design two charts that source their data differently. This first chart simply source a direct URL of an  API and the necessary parameters - API key, data points etc - in the json file.
-							</h6>
-							<h6>
-								The code in json to implement the API source and filter the data looks like this:
-							</h6>
-<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+</pre>
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 3 -->
+               <div class="card-blogEntry panel">
+                  <div class="chart center" id="thirdChart">
+                     <script>
+                        var myChart3 = "html/json/1_Embedding/chart3_givenBitcoin.json";
+                        vegaEmbed('#thirdChart', myChart3);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Bitcoin chart taken from rapidcharts.io</b></h3>
+                  </div>
+                  <div class="blog-0description">
+                     <h5>Data was sourced from Coinbase via FRED</h5>
+                     <h6>The third graph was fetched from rapidcharts.io. By using the inspect tool I was able to pull the json spec and embed that here.</h6>
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 2. Hosting Panel -->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-2-Hosting">
+      <header class="cd-panel__header">
+         <h1>2. Hosting Data</h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div id="fourthChart" class="chart center">
+                     <script>
+                        var myChart4 = "html/json/2_Hosting/chart1_givenCovidCases.json";
+                        vegaEmbed('#fourthChart', myChart4);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Vega Editor</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from an ONS API and filtered to only include Birmingham, Croydon, Manchester, Sheffield and Brighton. <br>
+                        <span class="date">11th October, 2021</span>
+                     </h5>
+                     <h6>
+                        Progressing from the specs we saw in the examples, I was tasked to design two charts that source their data differently. This first chart simply source a direct URL of an  API and the necessary parameters - API key, data points etc - in the json file.
+                     </h6>
+                     <h6>
+                        The code in json to implement the API source and filter the data looks like this:
+                     </h6>
+                     <!-- HTML generated using hilite.me -->
+                     <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <table>
+                           <tr>
+                              <td>
+                                 <pre style="margin: 0; line-height: 125%"> 1
  2
  3
  4
@@ -470,7 +469,10 @@
 10
 11
 12
-13</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="background-color: #fff0f0">&quot;data&quot;</span><span style="color: #FF0000; background-color: #FFAAAA">:</span> {
+13</pre>
+                              </td>
+                              <td>
+                                 <pre style="margin: 0; line-height: 125%"><span style="background-color: #fff0f0">&quot;data&quot;</span><span style="color: #FF0000; background-color: #FFAAAA">:</span> {
     <span style="color: #007700">&quot;url&quot;</span>: <span style="background-color: #fff0f0">&quot;https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&amp;metric=newCasesBySpecimenDate&amp;format=csv&quot;</span>,
     <span style="color: #007700">&quot;format&quot;</span>: {<span style="color: #007700">&quot;type&quot;</span>: <span style="background-color: #fff0f0">&quot;csv&quot;</span>}
   }<span style="color: #FF0000; background-color: #FFAAAA">,</span>
@@ -483,171 +485,181 @@
         }
 
     ]<span style="color: #FF0000; background-color: #FFAAAA">,</span>
-</pre></td></tr></table></div>
-
-						</div>
-					</div>
-					<hr>
-
-					<!-- Blog entry 2 -->
-					<div class="card-blogEntry panel">
-						<div id="fifthChart" class="chart center">
-							<script>
-								var myChart5 = "html/json/2_Hosting/chart2_givenCovidDeaths.json";
-								vegaEmbed('#fifthChart', myChart5);
-							</script>
-						</div>
-						<div class="blog-details">
-							<h3><b>ONS API Data</b></h3>
-						</div>
-						<div class="blog-description">
-							<h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
-							<h6>
-								The second chart sources data from a csv file that holds data previously downloaded then hosted locally with this page on my GitHub repository.
-							</h6>
-							<h6>
-								The code to implement a csv file as data for a chart looks like this:
-							</h6>
-<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+</pre>
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div id="fifthChart" class="chart center">
+                     <script>
+                        var myChart5 = "html/json/2_Hosting/chart2_givenCovidDeaths.json";
+                        vegaEmbed('#fifthChart', myChart5);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>ONS API Data</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
+                     <h6>
+                        The second chart sources data from a csv file that holds data previously downloaded then hosted locally with this page on my GitHub repository.
+                     </h6>
+                     <h6>
+                        The code to implement a csv file as data for a chart looks like this:
+                     </h6>
+                     <!-- HTML generated using hilite.me -->
+                     <div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <table>
+                           <tr>
+                              <td>
+                                 <pre style="margin: 0; line-height: 125%">1
 2
 3
-4</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #4070a0">&quot;data&quot;</span><span style="border: 1px solid #FF0000">:</span> {
+4</pre>
+                              </td>
+                              <td>
+                                 <pre style="margin: 0; line-height: 125%"><span style="color: #4070a0">&quot;data&quot;</span><span style="border: 1px solid #FF0000">:</span> {
     <span style="color: #062873; font-weight: bold">&quot;url&quot;</span>: <span style="color: #4070a0">&quot;https://lhkkennedy.github.io/html/json/2_Hosting/data2_givenCovidDeaths.csv&quot;</span>,
     <span style="color: #062873; font-weight: bold">&quot;format&quot;</span>: {<span style="color: #062873; font-weight: bold">&quot;type&quot;</span>: <span style="color: #4070a0">&quot;csv&quot;</span>}
   }<span style="border: 1px solid #FF0000">,</span>
-</pre></td></tr></table></div>
-
-						</div>
-					</div>
-					<hr>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- 3. Editing Data-->
-	<div class="cd-panel cd-panel--from-right js-cd-panel-3-Editing">
-		<header class="cd-panel__header">
-			<h1>3. Editing</h1>
-			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
-		</header>
-		<div class="cd-panel__container">
-			<div class="cd-panel__content">
-                <div class="col-blogEntry panel">
-            
-                    <!-- Blog entry 1 -->
-                    <div class="card-blogEntry panel">
-                        <div id="sixthChart" class="chart center">
-                            <script>
-                                var myChart6 = "html/json/3_Editing/chart1_STA.json";
-                                vegaEmbed('#sixthChart', myChart6);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>Vega Editor</b></h3></div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
-                                <span class="date">4th October, 2021</span></h5>
-                        </div>
-                    </div>
-                    <hr>
-                    
-                    <!-- Blog entry 2 -->
-                    <div class="card-blogEntry panel">
-                        <div id="seventhChart" class="chart center">
-                            <script>
-                                var myChart7 = "html/json/3_Editing/chart2_inline.json";
-                                vegaEmbed('#seventhChart', myChart7);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>ONS API Data</b></h3>
-                        </div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
-                        </div>
-                    </div>
-                    <hr>
-
-                </div>
-		    </div>		
-	    </div>
-	</div>
-
-	<!-- 4. API-->
-	<div class="cd-panel cd-panel--from-right js-cd-panel-4-API">
-		<header class="cd-panel__header">
-			<h1>4. API </h1>
-			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
-		</header>
-		<div class="cd-panel__container">
-			<div class="cd-panel__content">
-                <div class="col-blogEntry panel">
-            
-                    <!-- Blog entry 1 -->
-                    <div class="card-blogEntry panel">
-                        <div id="eigthChart" class="chart center">
-                            <script>
-                                var myChart8= "html/json/4_API/chart1_EIAemissionAPI.json";
-                                vegaEmbed('#eigthChart', myChart8);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>Vega Editor</b></h3></div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
-                                <span class="date">4th October, 2021</span></h5>
-                        </div>
-                    </div>
-                    <hr>
-                    
-                    <!-- Blog entry 2 -->
-                    <div class="card-blogEntry panel">
-                        <div id="ninethChart" class="chart center">
-                            <script>
-                                var myChart9 = "html/json/4_API/chart2_unrate.json";
-                                vegaEmbed('#ninethChart', myChart9);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>ONS API Data</b></h3>
-                        </div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
-                        </div>
-                    </div>
-                    <hr>
-
-                </div>
-		    </div>		
-	    </div>
-	</div>
-
-	<!-- 5. Loops -->
-	<div class="cd-panel cd-panel--from-right js-cd-panel-5-Loops">
-		<header class="cd-panel__header">
-			<h1>5. Loops </h1>
-			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
-		</header>
-		<div class="cd-panel__container">
-			<div class="cd-panel__content">
-                <div class="col-blogEntry panel">
-            
-                    <!-- Blog entry 1 -->
-                    <div class="card-blogEntry panel">
-                        <div id="tenthChart" class="chart center">
-                            <script>
-                                var myChart10 = "html/json/5_Loops/chart1_TNW.json";
-                                vegaEmbed('#tenthChart', myChart10);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>Vega Editor</b></h3></div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
-                                <span class="date">4th October, 2021</span></h5>
-
-<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">requests</span>
+</pre>
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 3. Editing Data-->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-3-Editing">
+      <header class="cd-panel__header">
+         <h1>3. Editing</h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div id="sixthChart" class="chart center">
+                     <script>
+                        var myChart6 = "html/json/3_Editing/chart1_STA.json";
+                        vegaEmbed('#sixthChart', myChart6);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Vega Editor</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                        <span class="date">4th October, 2021</span>
+                     </h5>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div id="seventhChart" class="chart center">
+                     <script>
+                        var myChart7 = "html/json/3_Editing/chart2_inline.json";
+                        vegaEmbed('#seventhChart', myChart7);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>ONS API Data</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 4. API-->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-4-API">
+      <header class="cd-panel__header">
+         <h1>4. API </h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div id="eigthChart" class="chart center">
+                     <script>
+                        var myChart8= "html/json/4_API/chart1_EIAemissionAPI.json";
+                        vegaEmbed('#eigthChart', myChart8);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Vega Editor</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                        <span class="date">4th October, 2021</span>
+                     </h5>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div id="ninethChart" class="chart center">
+                     <script>
+                        var myChart9 = "html/json/4_API/chart2_unrate.json";
+                        vegaEmbed('#ninethChart', myChart9);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>ONS API Data</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 5. Loops -->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-5-Loops">
+      <header class="cd-panel__header">
+         <h1>5. Loops </h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div id="tenthChart" class="chart center">
+                     <script>
+                        var myChart10 = "html/json/5_Loops/chart1_TNW.json";
+                        vegaEmbed('#tenthChart', myChart10);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Vega Editor</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                        <span class="date">4th October, 2021</span>
+                     </h5>
+                     <!-- HTML generated using hilite.me -->
+                     <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                        <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">requests</span>
 <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">json</span>
 <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">os</span>
 <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">csv</span>
@@ -666,137 +678,130 @@ fredSeries <span style="color: #333333">=</span> [<span style="background-color:
     <span style="color: #008800; font-weight: bold">with</span> <span style="color: #007020">open</span>(fileName, <span style="background-color: #fff0f0">&#39;w&#39;</span>, encoding<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;utf-8&#39;</span>) <span style="color: #008800; font-weight: bold">as</span> f:
         json<span style="color: #333333">.</span>dump(data, f, ensure_ascii<span style="color: #333333">=</span><span style="color: #007020">False</span>, indent<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">4</span>)
         <span style="color: #008800; font-weight: bold">print</span>(i, <span style="background-color: #fff0f0">&quot; Data from &quot;</span>, URL, <span style="background-color: #fff0f0">&#39; dumped.&#39;</span>)
-</pre></div>
-
-
-                        </div>
-                    </div>
-                    <hr>
-                    
-                    <!-- Blog entry 2 -->
-                    <div class="card-blogEntry panel">
-                        <div id="eleventhChart" class="chart center">
-                            <script>
-                                var myChart11 = "html/json/5_Loops/chart2_flightTimes.json";
-                                vegaEmbed('#eleventhChart', myChart11);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>ONS API Data</b></h3>
-                        </div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
-                        </div>
-                    </div>
-                    <hr>
-
-                </div>
-		    </div>		
-	    </div>
-	</div>
-
-	<!-- 6. Scraper  -->
-	<div class="cd-panel cd-panel--from-right js-cd-panel-6-Scraper">
-		<header class="cd-panel__header">
-			<h1>6. Scraper </h1>
-			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
-		</header>
-		<div class="cd-panel__container">
-			<div class="cd-panel__content">
-                <div class="col-blogEntry panel">
-            
-                    <!-- Blog entry 1 -->
-                    <div class="card-blogEntry panel">
-                        <div id="twelfthChart" class="chart center">
-                            <script>
-                                var myChart12 = "html/json/6_Scraper/chart_scraper.json";
-                                vegaEmbed('#twelfthChart', myChart12);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>Vega Editor</b></h3></div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
-                                <span class="date">4th October, 2021</span></h5>
-                        </div>
-                    </div>
-                    <hr>
-                    
-                </div>
-		    </div>		
-	    </div>
-	</div>
-
-	<!-- 7. Data Stories  -->
-	<div class="cd-panel cd-panel--from-right js-cd-panel-7-Stories">
-		<header class="cd-panel__header">
-			<h1>7. Data Stories</h1>
-			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
-		</header>
-		<div class="cd-panel__container">
-			<div class="cd-panel__content">
-                <div class="col-blogEntry panel">
-            
-                    <!-- Blog entry 1 -->
-                    <div class="card-blogEntry panel">
-                        <div id="thirteenthChart" class="chart center">
-                            <script>
-                                var myChart13 = "html/json/7_Data_Stories/UKenergyProduction.json";
-                                vegaEmbed('#thirteenthChart', myChart13);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>Vega Editor</b></h3></div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
-                                <span class="date">4th October, 2021</span></h5>
-                        </div>
-                    </div>
-                    <hr>
-
-					            
-                    <!-- Blog entry 2 -->
-                    <div class="card-blogEntry panel">
-                        <div id="fourteenthChart" class="chart center">
-                            <script>
-                                var myChart14 = "html/json/7_Data_Stories/UKenergyConsumption.json";
-                                vegaEmbed('#fourteenthChart', myChart14);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>Vega Editor</b></h3></div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
-                                <span class="date">4th October, 2021</span></h5>
-                        </div>
-                    </div>
-                    <hr>
-
-					<!-- Blog entry 3 -->
-                    <div class="card-blogEntry panel">
-                        <div id="fifthteenthChart" class="chart center">
-                            <script>
-                                var myChart15 = "html/json/7_Data_Stories/UKenergyConsumptionFocussed.json";
-                                vegaEmbed('#fifthteenthChart', myChart15);
-                              </script>
-                        </div>
-                        <div class="blog-details">
-                            <h3><b>Vega Editor</b></h3></div>
-                        <div class="blog-description">
-                            <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
-                                <span class="date">4th October, 2021</span></h5>
-                        </div>
-                    </div>
-                    <hr>
-                    
-                </div>
-		    </div>		
-	    </div>
-	</div>
-
-	<!-- Resource JavaScript -->
-	<script src="js/main.js"></script>
-
+</pre>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div id="eleventhChart" class="chart center">
+                     <script>
+                        var myChart11 = "html/json/5_Loops/chart2_flightTimes.json";
+                        vegaEmbed('#eleventhChart', myChart11);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>ONS API Data</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 6. Scraper  -->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-6-Scraper">
+      <header class="cd-panel__header">
+         <h1>6. Scraper </h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div id="twelfthChart" class="chart center">
+                     <script>
+                        var myChart12 = "html/json/6_Scraper/chart_scraper.json";
+                        vegaEmbed('#twelfthChart', myChart12);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Vega Editor</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                        <span class="date">4th October, 2021</span>
+                     </h5>
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 7. Data Stories  -->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-7-Stories">
+      <header class="cd-panel__header">
+         <h1>7. Data Stories</h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div id="thirteenthChart" class="chart center">
+                     <script>
+                        var myChart13 = "html/json/7_Data_Stories/UKenergyProduction.json";
+                        vegaEmbed('#thirteenthChart', myChart13);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Vega Editor</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                        <span class="date">4th October, 2021</span>
+                     </h5>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div id="fourteenthChart" class="chart center">
+                     <script>
+                        var myChart14 = "html/json/7_Data_Stories/UKenergyConsumption.json";
+                        vegaEmbed('#fourteenthChart', myChart14);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Vega Editor</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                        <span class="date">4th October, 2021</span>
+                     </h5>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 3 -->
+               <div class="card-blogEntry panel">
+                  <div id="fifthteenthChart" class="chart center">
+                     <script>
+                        var myChart15 = "html/json/7_Data_Stories/UKenergyConsumptionFocussed.json";
+                        vegaEmbed('#fifthteenthChart', myChart15);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Vega Editor</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                        <span class="date">4th October, 2021</span>
+                     </h5>
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Resource JavaScript -->
+   <script src="js/main.js"></script>
 </body>
-
 </html>
