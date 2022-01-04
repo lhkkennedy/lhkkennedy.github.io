@@ -364,6 +364,9 @@
 							<h5>Given to show how to use vega to display graph <br>
 								<span class="date">4th October, 2021</span>
 							</h5>
+							<h6>After starting our GitHub repositories and pages where we will host all of our charts for the profile. Each will represent a different skill crucial to data science. 
+								This week we learn the basics of manipulating html and css to embed charts that have been already coded in json. The html page uses scripts from vega vega-lite and vega-embed to create visualisations from a json spec. Data can be imported from a url to an API or hosted locally in a seperate file. 
+								This first graph imports data directly from the UK gov coronavirus API and as such updates on reload whenever new data is available to fetch.</h6>
 						</div>
 					</div>
 					<hr>
@@ -381,6 +384,23 @@
 						</div>
 						<div class="blog-description">
 							<h5>Data was sourced from ONS as csv file</h5>
+							<h6>This second graph, also given before hand, is pulling data from a github repository as a csv file.
+								The html embed script looks like this:</h6>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #333333">&lt;</span>div <span style="color: #007020">id</span><span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;firstChart&quot;</span> class<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;chart center&quot;</span><span style="color: #333333">&gt;</span>
+    <span style="color: #333333">&lt;</span>script<span style="color: #333333">&gt;</span>
+        var myChart1 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;html/json/1_Embedding/chart1_covidUKRegions.json&quot;</span>;
+        vegaEmbed(<span style="background-color: #fff0f0">&#39;#firstChart&#39;</span>, myChart1);
+    <span style="color: #333333">&lt;/</span>script<span style="color: #333333">&gt;</span>
+<span style="color: #333333">&lt;/</span>div<span style="color: #333333">&gt;</span>
+</pre></td></tr></table></div>
+
+
 						</div>
 					</div>
 					<hr>
@@ -398,6 +418,7 @@
 						</div>
 						<div class="blog-0description">
 							<h5>Data was sourced from Coinbase via FRED</h5>
+							<h6>The third graph was fetched from rapidcharts.io. By using the inspect tool I was able to pull the json spec and embed that here.</h6>
 						</div>
 					</div>
 					<hr>
@@ -599,6 +620,7 @@ fredSeries <span style="color: #333333">=</span> [<span style="background-color:
         json<span style="color: #333333">.</span>dump(data, f, ensure_ascii<span style="color: #333333">=</span><span style="color: #007020">False</span>, indent<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">4</span>)
         <span style="color: #008800; font-weight: bold">print</span>(i, <span style="background-color: #fff0f0">&quot; Data from &quot;</span>, URL, <span style="background-color: #fff0f0">&#39; dumped.&#39;</span>)
 </pre></div>
+
 
                         </div>
                     </div>
