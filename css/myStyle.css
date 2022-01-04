@@ -924,6 +924,9 @@ a{
   width: 100%;
 }
 
+.col-blogEntry.panel:last-child{
+  margin-bottom: 100px;
+}
 
 @media (max-width:550px) {
   .col-blogEntry {
@@ -946,6 +949,7 @@ a{
     padding-right: 0;
     padding-left: auto;
   }
+
   .blog-details {
     margin: 0;
     display: block;
