@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "title": {
-      "text": "COVID cases: UK Regions",
-      "subtitle":"Sub-title here",
+      "text": "COVID cases: Select UK Regions",
+      "subtitle":"Historic data of daily coronavirus cases sourced directly from API",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -16,12 +16,12 @@
     },
   
      "transform":[
-       
+
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["Bristol, City of", "Bolton", "Glasgow City"]}
+          "oneOf": ["Croydon", "Sheffield", "Manchester", "Birmingham"]}
           }
-  
+
       ],
     
     

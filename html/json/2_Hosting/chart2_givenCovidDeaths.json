@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "title": {
-      "text": "COVID deaths",
-      "subtitle":"by region",
+      "text": "COVID deaths: Select UK Regions",
+      "subtitle":"Historic data of daily coronavirus deaths hosted locally.",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -21,7 +21,6 @@
           "field": "areaName", 
           "oneOf": ["England", "Scotland", "Wales", "Northern Ireland"]}
           }
-  
       ],
     
     
@@ -52,7 +51,7 @@
         "title": null,
         "legend": {
           "orient": "top-left", 
-          "fillColor": "#606666",
+          "fillColor": "#fff",
           "padding": 5}
       }
   }

@@ -449,10 +449,42 @@
 							<h3><b>Vega Editor</b></h3>
 						</div>
 						<div class="blog-description">
-							<h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and
-								Glasgow. <br>
-								<span class="date">4th October, 2021</span>
+							<h5>Data was sourced from an ONS API and filtered to only include Birmingham, Croydon, Manchester, Sheffield and Brighton. <br>
+								<span class="date">11th October, 2021</span>
 							</h5>
+							<h6>
+								Progressing from the specs we saw in the examples, I was tasked to design two charts that source their data differently. This first chart simply source a direct URL of an  API and the necessary parameters - API key, data points etc - in the json file.
+							</h6>
+							<h6>
+								The code in json to implement the API source and filter the data looks like this:
+							</h6>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="background-color: #fff0f0">&quot;data&quot;</span><span style="color: #FF0000; background-color: #FFAAAA">:</span> {
+    <span style="color: #007700">&quot;url&quot;</span>: <span style="background-color: #fff0f0">&quot;https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&amp;metric=newCasesBySpecimenDate&amp;format=csv&quot;</span>,
+    <span style="color: #007700">&quot;format&quot;</span>: {<span style="color: #007700">&quot;type&quot;</span>: <span style="background-color: #fff0f0">&quot;csv&quot;</span>}
+  }<span style="color: #FF0000; background-color: #FFAAAA">,</span>
+
+   <span style="background-color: #fff0f0">&quot;transform&quot;</span><span style="color: #FF0000; background-color: #FFAAAA">:</span>[
+
+      {<span style="color: #007700">&quot;filter&quot;</span>: {
+        <span style="color: #007700">&quot;field&quot;</span>: <span style="background-color: #fff0f0">&quot;areaName&quot;</span>, 
+        <span style="color: #007700">&quot;oneOf&quot;</span>: [<span style="background-color: #fff0f0">&quot;Croydon&quot;</span>, <span style="background-color: #fff0f0">&quot;Sheffield&quot;</span>, <span style="background-color: #fff0f0">&quot;Manchester&quot;</span>, <span style="background-color: #fff0f0">&quot;Birmingham&quot;</span>]}
+        }
+
+    ]<span style="color: #FF0000; background-color: #FFAAAA">,</span>
+</pre></td></tr></table></div>
+
 						</div>
 					</div>
 					<hr>
@@ -470,6 +502,21 @@
 						</div>
 						<div class="blog-description">
 							<h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
+							<h6>
+								The second chart sources data from a csv file that holds data previously downloaded then hosted locally with this page on my GitHub repository.
+							</h6>
+							<h6>
+								The code to implement a csv file as data for a chart looks like this:
+							</h6>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #4070a0">&quot;data&quot;</span><span style="border: 1px solid #FF0000">:</span> {
+    <span style="color: #062873; font-weight: bold">&quot;url&quot;</span>: <span style="color: #4070a0">&quot;https://lhkkennedy.github.io/html/json/2_Hosting/data2_givenCovidDeaths.csv&quot;</span>,
+    <span style="color: #062873; font-weight: bold">&quot;format&quot;</span>: {<span style="color: #062873; font-weight: bold">&quot;type&quot;</span>: <span style="color: #4070a0">&quot;csv&quot;</span>}
+  }<span style="border: 1px solid #FF0000">,</span>
+</pre></td></tr></table></div>
+
 						</div>
 					</div>
 					<hr>
