@@ -557,12 +557,41 @@
                      </script>
                   </div>
                   <div class="blog-details">
-                     <h3><b>Vega Editor</b></h3>
+                     <h3><b>Python scripts</b></h3>
                   </div>
                   <div class="blog-description">
-                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
-                        <span class="date">4th October, 2021</span>
+                     <h5>Manipulating data with scripts makes your life much easier.<br>
+                        <span class="date">18th October, 2021</span>
                      </h5>
+                     <h6>
+                        This week we were tasked to begin manipulating data to suite our needs. This chart plots two time series from two seperate API URLs. Pulling data from two seperate API URLs  may take longer than if the data was together in one file hosted on GitHub. As I discover the json data files were deeply nested and would require some cleaning before a clean merge using python would be possible. After normalising the data and exporting the data frame to a csv file, the data set was merged into one file and hosted on GitHub.
+                     </h6>
+                     <br>
+                     <h6>
+                        The code fo normalising nested json data and exporting it to a csv file looks like this:
+                     </h6>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">json</span>
+   <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">pandas</span> <span style="color: #008800; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">pd</span>
+
+   file_base <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;FREDdata_WFRB{}.json&quot;</span>
+   fredSeries <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;LB50107&quot;</span>, <span style="background-color: #fff0f0">&quot;LT01026&quot;</span>, <span style="background-color: #fff0f0">&quot;SB50189&quot;</span>, <span style="background-color: #fff0f0">&quot;ST01108&quot;</span>]
+   
+   <span style="color: #888888"># for loops to iterate through multiple json files</span>
+   <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> fredSeries:
+       filename <span style="color: #333333">=</span> file_base<span style="color: #333333">.</span>format(i)
+       <span style="color: #008800; font-weight: bold">with</span> <span style="color: #007020">open</span>(filename, <span style="background-color: #fff0f0">&quot;rb&quot;</span>) <span style="color: #008800; font-weight: bold">as</span> infile:
+           
+           <span style="color: #888888">#load the json file infile</span>
+           data <span style="color: #333333">=</span> json<span style="color: #333333">.</span>load(infile)
+   
+           <span style="color: #888888"># normalise nested data - we only care about the data in &#39;observations&#39;</span>
+           data <span style="color: #333333">=</span> pd<span style="color: #333333">.</span>json_normalize(data, <span style="background-color: #fff0f0">&quot;observations&quot;</span>)
+           df <span style="color: #333333">=</span> pd<span style="color: #333333">.</span>DataFrame(data)
+           <span style="color: #008800; font-weight: bold">print</span>(df)
+           
+           <span style="color: #888888">#export to csv file.</span>
+           df<span style="color: #333333">.</span>to_csv (i<span style="color: #333333">+</span><span style="background-color: #fff0f0">&#39;.csv&#39;</span>)
+   </pre></div>   
                   </div>
                </div>
                <hr>
@@ -575,10 +604,29 @@
                      </script>
                   </div>
                   <div class="blog-details">
-                     <h3><b>ONS API Data</b></h3>
+                     <h3><b>Understanding the JSON matrix</b></h3>
                   </div>
                   <div class="blog-description">
-                     <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
+                     <h5>This chart demonstrates the use of data from a json matrix nested in the spec for the chart. The spec looks like this:</h5>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="background-color: #fff0f0">&quot;data&quot;</span><span style="color: #FF0000; background-color: #FFAAAA">:</span> {
+   <span style="color: #007700">&quot;values&quot;</span>: [
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;1&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">28</span>},
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;2&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">55</span>},
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;3&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">43</span>},
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;4&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">91</span>},
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;5&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">81</span>},
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;6&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">53</span>},
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;7&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">19</span>},
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;8&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">87</span>},
+   {<span style="color: #007700">&quot;a&quot;</span>: <span style="background-color: #fff0f0">&quot;9&quot;</span>, <span style="color: #007700">&quot;b&quot;</span>: <span style="color: #0000DD; font-weight: bold">52</span>}
+ ]
+}<span style="color: #FF0000; background-color: #FFAAAA">,</span>
+<span style="background-color: #fff0f0">&quot;mark&quot;</span><span style="color: #FF0000; background-color: #FFAAAA">:</span> <span style="background-color: #fff0f0">&quot;bar&quot;</span><span style="color: #FF0000; background-color: #FFAAAA">,</span>
+<span style="background-color: #fff0f0">&quot;encoding&quot;</span><span style="color: #FF0000; background-color: #FFAAAA">:</span> {
+ <span style="color: #007700">&quot;x&quot;</span>: {<span style="color: #007700">&quot;field&quot;</span>: <span style="background-color: #fff0f0">&quot;a&quot;</span>, <span style="color: #007700">&quot;type&quot;</span>: <span style="background-color: #fff0f0">&quot;nominal&quot;</span>, <span style="color: #007700">&quot;axis&quot;</span>: {<span style="color: #007700">&quot;labelAngle&quot;</span>: <span style="color: #0000DD; font-weight: bold">0</span>}},
+ <span style="color: #007700">&quot;y&quot;</span>: {<span style="color: #007700">&quot;field&quot;</span>: <span style="background-color: #fff0f0">&quot;b&quot;</span>, <span style="color: #007700">&quot;type&quot;</span>: <span style="background-color: #fff0f0">&quot;quantitative&quot;</span>}
+}
+</pre></div>
                   </div>
                </div>
                <hr>
