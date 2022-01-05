@@ -79,6 +79,9 @@ print("Data Frame: ", df)
 
 #save to csv
 filename = 'stockPrices.csv'
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 filelocation = os.getcwd()
 print("Saving as:  [ " + filename + " ]  in:  [ " + filelocation + " ] ")
 df.to_csv(filename)
