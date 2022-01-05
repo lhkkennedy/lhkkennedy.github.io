@@ -652,12 +652,94 @@
                      </script>
                   </div>
                   <div class="blog-details">
-                     <h3><b>Vega Editor</b></h3>
+                     <h3><b>Application Programming Interface</b></h3>
                   </div>
                   <div class="blog-description">
-                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                     <h5>
                         <span class="date">4th October, 2021</span>
                      </h5>
+                     <h6>
+                        The focus for this session was navigating APIs to to obtain the right data. Many APIs will provide a free key within seconds of signing up. The two charts embedded here are linked to the EIA emissions API and the FRED API.
+By reading the documentation of each API you can learn how to manipulate the request URL to change the data pulled.
+                     </h6>
+                     <h6>
+                        The eia for example provides the sample URL and by inserting your own parameters you receive the desired response:
+                     </h6>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="border: 1px solid #FF0000">http://api.eia.gov/series/?series_id=sssssss&amp;api_key=YOUR_API_KEY_HERE</span>[<span style="border: 1px solid #FF0000">&amp;num=</span>][<span style="border: 1px solid #FF0000">&amp;out=xml|json</span>]
+
+   <span style="border: 1px solid #FF0000">https://api.eia.gov/series/?series_id=EMISS.CO</span><span style="color: #40a070">2</span><span style="border: 1px solid #FF0000">-TOTV-TT-TO-US.A&amp;api_key=bZ</span><span style="color: #40a070">7</span><span style="border: 1px solid #FF0000">fbef</span><span style="color: #40a070">9</span><span style="border: 1px solid #FF0000">jvSqEelw</span><span style="color: #40a070">3</span><span style="border: 1px solid #FF0000">XbaF</span><span style="color: #40a070">6</span><span style="border: 1px solid #FF0000">ise</span><span style="color: #40a070">1</span><span style="border: 1px solid #FF0000">CnHdeq</span><span style="color: #40a070">2</span><span style="border: 1px solid #FF0000">SX</span><span style="color: #40a070">5</span><span style="border: 1px solid #FF0000">Jbbp&amp;out=json</span>
+
+   {
+     <span style="color: #062873; font-weight: bold">&quot;request&quot;</span>: {
+         <span style="color: #062873; font-weight: bold">&quot;command&quot;</span>: <span style="color: #4070a0">&quot;series&quot;</span>,
+         <span style="color: #062873; font-weight: bold">&quot;series_id&quot;</span>: <span style="color: #4070a0">&quot;EMISS.CO2-TOTV-TT-TO-US.A&quot;</span>
+     },
+     <span style="color: #062873; font-weight: bold">&quot;series&quot;</span>: [
+         {
+             <span style="color: #062873; font-weight: bold">&quot;series_id&quot;</span>: <span style="color: #4070a0">&quot;EMISS.CO2-TOTV-TT-TO-US.A&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;name&quot;</span>: <span style="color: #4070a0">&quot;Total carbon dioxide emissions from all sectors, all fuels, United States&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;units&quot;</span>: <span style="color: #4070a0">&quot;million metric tons CO2&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;f&quot;</span>: <span style="color: #4070a0">&quot;A&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;unitsshort&quot;</span>: <span style="color: #4070a0">&quot;mmt CO2&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;description&quot;</span>: <span style="color: #4070a0">&quot;See http:\/\/www.eia.gov\/environment\/emissions\/state\/analysis\/ for technical notes and documentation.&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;copyright&quot;</span>: <span style="color: #4070a0">&quot;None&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;source&quot;</span>: <span style="color: #4070a0">&quot;EIA, U.S. Energy Information Administration&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;iso3166&quot;</span>: <span style="color: #4070a0">&quot;USA-US&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;geography&quot;</span>: <span style="color: #4070a0">&quot;USA-US&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;start&quot;</span>: <span style="color: #4070a0">&quot;1980&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;end&quot;</span>: <span style="color: #4070a0">&quot;2018&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;updated&quot;</span>: <span style="color: #4070a0">&quot;2021-10-14T16:18:55-0400&quot;</span>,
+             <span style="color: #062873; font-weight: bold">&quot;data&quot;</span>: [
+                 [
+                     <span style="color: #4070a0">&quot;2018&quot;</span>,
+                     <span style="color: #40a070">5297.409232</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2017&quot;</span>,
+                     <span style="color: #40a070">5146.352484</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2016&quot;</span>,
+                     <span style="color: #40a070">5178.787104</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2015&quot;</span>,
+                     <span style="color: #40a070">5262.977138</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2014&quot;</span>,
+                     <span style="color: #40a070">5413.676531</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2013&quot;</span>,
+                     <span style="color: #40a070">5353.413972</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2012&quot;</span>,
+                     <span style="color: #40a070">5210.996162</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2011&quot;</span>,
+                     <span style="color: #40a070">5439.366158</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2010&quot;</span>,
+                     <span style="color: #40a070">5571.811048</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2009&quot;</span>,
+                     <span style="color: #40a070">5368.120164</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2008&quot;</span>,
+                     <span style="color: #40a070">5781.278091</span>
+                 ],
+                 [
+                     <span style="color: #4070a0">&quot;2007&quot;</span>,
+   
+       <span style="border: 1px solid #FF0000">....</span>
+   </pre></div>
+   
                   </div>
                </div>
                <hr>
@@ -670,10 +752,12 @@
                      </script>
                   </div>
                   <div class="blog-details">
-                     <h3><b>ONS API Data</b></h3>
+                     <h3><b>FRED API: Unemployment Rate</b></h3>
                   </div>
                   <div class="blog-description">
-                     <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
+                     <h6>
+                        The API URL for the data used in this chart was included in a python program that downloaded the data as a local file which was then hosted on GitHub. By understanding the structure of the API URL pulling vast amounts of data becomes much easier.
+                     </h6>
                   </div>
                </div>
                <hr>
@@ -699,12 +783,16 @@
                      </script>
                   </div>
                   <div class="blog-details">
-                     <h3><b>Vega Editor</b></h3>
+                     <h3><b>Python Scripts & APIs</b></h3>
                   </div>
                   <div class="blog-description">
-                     <h5>Data was sourced from an ONS API and filtered to only include Bolton, Bristol and Glasgow. <br>
+                     <h5>FRED API: Total Net Worth by wealth percentile<br>
                         <span class="date">4th October, 2021</span>
                      </h5>
+                     <h6>
+                        The focus for this session was navigating APIs to to obtain the right data. Many APIs will provide a free key within seconds of signing up. The two charts embedded here are linked to the EIA emissions API and the FRED API.
+By reading the documentation of each API you can learn how to manipulate the request URL to change the data pulled. The eia for example provides the sample URL and by inserting your own parameters you receive the desired response:
+                     </h6>
                      <!-- HTML generated using hilite.me -->
                      <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
                         <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">requests</span>
@@ -740,10 +828,83 @@ fredSeries <span style="color: #333333">=</span> [<span style="background-color:
                      </script>
                   </div>
                   <div class="blog-details">
-                     <h3><b>ONS API Data</b></h3>
+                     <h3><b>AeroDataBox</b></h3>
                   </div>
                   <div class="blog-description">
-                     <h5>Data was sourced from ONS as csv file and hosted on GitHub</h5>
+                     <h5>Flight duration from London Heathrow Airport (Top 5 Busiest Airports)</h5>
+                     <h6>
+                        This next chart presents data extracted from AeroDataBox API run on RapidAPI. It provides data points on the approximate distance and flight duration between airports. Each URL only produces data for one pair of airports so we require a for loop to run through the different series Ids. By loading the json file then inputting the data into a DataFrame  to export as a csv we are able to host this data in a more accessible manner. The json spec points to one file for data.
+                     </h6>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #4070a0">&quot;data&quot;</span><span style="border: 1px solid #FF0000">:</span> {
+   <span style="color: #062873; font-weight: bold">&quot;url&quot;</span>: <span style="color: #4070a0">&quot;html/json/5_Loops/data2_flightTimes.csv&quot;</span>,
+   <span style="color: #062873; font-weight: bold">&quot;format&quot;</span>: {<span style="color: #062873; font-weight: bold">&quot;type&quot;</span>: <span style="color: #4070a0">&quot;csv&quot;</span>}
+ }<span style="border: 1px solid #FF0000">,</span>
+ </pre></div>
+ 
+                  </div>
+               </div>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div class="blog-details">
+                     <h3><b>Python Script</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h6>
+                        The code I used to extract and compile a data set from AeroDataBox API for durations of flights from London Heathrow.
+                     </h6>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">requests</span>
+   <span style="color: #007020; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">pandas</span> <span style="color: #007020; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">pd</span>
+   <span style="color: #007020; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">json</span>
+   <span style="color: #007020; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">os</span>
+   
+   url_base <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;https://aerodatabox.p.rapidapi.com/airports/iata/LHR/distance-time/{}&quot;</span>
+   IATAcodes <span style="color: #666666">=</span> [<span style="color: #4070a0">&quot;PEK&quot;</span>, <span style="color: #4070a0">&quot;DXB&quot;</span>, <span style="color: #4070a0">&quot;ORD&quot;</span>, <span style="color: #4070a0">&quot;HND&quot;</span>, <span style="color: #4070a0">&quot;LAX&quot;</span>]
+   
+   df <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>DataFrame()
+   
+   headers <span style="color: #666666">=</span> {
+       <span style="color: #4070a0">&#39;x-rapidapi-host&#39;</span>: <span style="color: #4070a0">&quot;aerodatabox.p.rapidapi.com&quot;</span>,
+       <span style="color: #4070a0">&#39;x-rapidapi-key&#39;</span>: <span style="color: #4070a0">&quot;7fd71fcbbemsh8c86cdcbb832719p18d2ffjsn738011331d29&quot;</span>
+       }
+   
+   <span style="color: #007020; font-weight: bold">for</span> i <span style="color: #007020; font-weight: bold">in</span> IATAcodes:
+       t <span style="color: #666666">=</span> IATAcodes<span style="color: #666666">.</span>index(i)
+       <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;--------------------------------------------&quot;</span>)
+       response <span style="color: #666666">=</span> requests<span style="color: #666666">.</span>request(<span style="color: #4070a0">&quot;GET&quot;</span>, url_base<span style="color: #666666">.</span>format(i), headers<span style="color: #666666">=</span>headers)
+       json_data <span style="color: #666666">=</span> json<span style="color: #666666">.</span>loads(response<span style="color: #666666">.</span>text)
+       name <span style="color: #666666">=</span> json_data[<span style="color: #4070a0">&quot;to&quot;</span>][<span style="color: #4070a0">&quot;name&quot;</span>]
+       flightTime <span style="color: #666666">=</span> json_data[<span style="color: #4070a0">&quot;approxFlightTime&quot;</span>]
+       distancekm <span style="color: #666666">=</span> json_data[<span style="color: #4070a0">&quot;greatCircleDistance&quot;</span>][<span style="color: #4070a0">&quot;km&quot;</span>]
+       distancemi <span style="color: #666666">=</span> json_data[<span style="color: #4070a0">&quot;greatCircleDistance&quot;</span>][<span style="color: #4070a0">&quot;mile&quot;</span>]
+       <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;Name: &quot;</span>, name)
+       <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;IATA code: &quot;</span>, i)
+       <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;Approx flightime from London Heathrow: &quot;</span>, flightTime)
+       <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;Distance (km): &quot;</span>, distancekm)
+       <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;Distance (mi): &quot;</span>, distancemi)
+       <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;Adding to dataframe....&quot;</span>)
+       <span style="color: #60a0b0; font-style: italic">## convert time to decimal time</span>
+       (h, m, s) <span style="color: #666666">=</span> flightTime<span style="color: #666666">.</span>split(<span style="color: #4070a0">&quot;:&quot;</span>)
+       decFlightTime <span style="color: #666666">=</span> <span style="color: #007020">int</span>(h) <span style="color: #666666">+</span> <span style="color: #007020">int</span>(m) <span style="color: #666666">/</span> <span style="color: #40a070">60</span> <span style="color: #666666">+</span> <span style="color: #007020">int</span>(s) <span style="color: #666666">/</span> <span style="color: #40a070">3600</span>
+       <span style="color: #60a0b0; font-style: italic">#results for this airport</span>
+       results <span style="color: #666666">=</span> [i, name, decFlightTime, distancekm, distancemi]
+       <span style="color: #60a0b0; font-style: italic">#store in a dataframe</span>
+       df_t <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>DataFrame(results)
+       df_t<span style="color: #666666">.</span>columns <span style="color: #666666">=</span> [<span style="color: #4070a0">&#39;Data&#39;</span>]
+       df[t] <span style="color: #666666">=</span> df_t[<span style="color: #4070a0">&#39;Data&#39;</span>]
+   
+   df <span style="color: #666666">=</span> df<span style="color: #666666">.</span>T
+   df<span style="color: #666666">.</span>columns <span style="color: #666666">=</span> [<span style="color: #4070a0">&quot;IATA_Code&quot;</span>, <span style="color: #4070a0">&quot;Name&quot;</span>, <span style="color: #4070a0">&quot;Approximate Flight Time&quot;</span>, <span style="color: #4070a0">&quot;Distance (km)&quot;</span>, <span style="color: #4070a0">&quot;Distance (mi)&quot;</span>]
+   
+   <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;--------------------------------------------&quot;</span>)
+   <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;Data Frame: &quot;</span>, df)
+   
+   <span style="color: #60a0b0; font-style: italic">## saving as csv file</span>
+   filename <span style="color: #666666">=</span> <span style="color: #4070a0">&#39;ApproxFlightTimesFromLHR.csv&#39;</span>
+   filelocation <span style="color: #666666">=</span> os<span style="color: #666666">.</span>getcwd()
+   <span style="color: #007020; font-weight: bold">print</span>(<span style="color: #4070a0">&quot;Saving as: &quot;</span> <span style="color: #666666">+</span> filename <span style="color: #666666">+</span> <span style="color: #4070a0">&quot;in: &quot;</span> <span style="color: #666666">+</span> filelocation)
+   df<span style="color: #666666">.</span>to_csv(filename)
+   </pre></div>
+   
                   </div>
                </div>
                <hr>
