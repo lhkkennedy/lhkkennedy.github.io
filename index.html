@@ -1161,6 +1161,33 @@ df<span style="color: #666666">.</span>to_csv(filename)
                   </div>
                </div>
                <hr>
+               
+               <!-- Blog entry 4 -->
+               <div class="card-blogEntry panel">
+                  <div class="blog-details">
+                     <h3><b>Data manipulation: STATA</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h6>The data required some reshaping which was done in STATA. The do file for reshaping energy production is below:</h6><br>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">clear
+import delimited using <span style="color: #4070a0">&quot;C:</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">Users</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">lhkke</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">OneDrive - University of Bristol</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">Documents</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">Work</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">Year_3</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">Data_Science</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">project</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">html</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">json</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">7_Data_Stories</span><span style="border: 1px solid #FF0000">\</span><span style="color: #4070a0">UKenergyProduction.xls&quot;</span>
+
+rename total totalMt
+rename coal coalMt
+rename natural naturalMt
+rename windsolarandhydro windsolarandhydroMt
+rename bioenergywaste bioenergywasteMt
+rename nuclear nuclearMt
+rename petroleum petroleumMt
+
+reshape long @Mt, i(date) j(<span style="color: #007020; font-weight: bold">type</span><span style="border: 1px solid #FF0000">)</span> string
+
+export delimited using <span style="color: #4070a0">&quot;UkenergyProduction&quot;</span>, replace
+</pre></div>
+
+                  </div>
+               </div>
+               <hr>
             </div>
          </div>
       </div>
