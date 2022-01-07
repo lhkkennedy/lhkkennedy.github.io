@@ -28,13 +28,14 @@
         "field": "date",
         "type": "temporal",
         "timeUnit": "yearmonth",
+        "title": "Year",
         "axis": {
           "format": "%Y",
           "labelOverlap": "greedy",
           "labelSeparation": 24,
           "ticks":false}},
 
-      "y": {"field": "Mt", "aggregate": "mean"},
+      "y": {"field": "Mt", "aggregate": "mean", "title": "Million tonnes"},
       "color": {"field": "type", "type": "nominal"}
     },
     "layer": [
