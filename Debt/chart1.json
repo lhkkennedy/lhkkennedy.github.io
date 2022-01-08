@@ -1,0 +1,107 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "UK energy consumption by source",
+  
+    "title": {
+    "text": "UK Energy Trends - Inland Energy Consumption",
+    "subtitle": "DBEIS/ONS - (in Million tonnes of oil equivalent)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+    "width":300,
+    "height":350,
+  
+    "data": {
+      "url": "DebtandGDP.csv",
+      "format": {"type": "csv"}
+    },
+  
+    "layer": [
+    {
+      "transform": [{"filter":{"field":"date", "timeUnit":"yearmonth", "range":[{"year": 2000, "month": 1},{"year": 2021, "month": 7}]}}],
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "title": "Year",
+          "scale": {
+            "domain": [{"year": 2000}, {"year": 2021, "month": 7}]
+          },
+          "axis": {
+            "format": "%Y",
+            "ticks":false}},
+  
+        "y": {"field": "tgbp", "type": "quantitative", "title": "Trillion £"},
+        "color": {"field": "data", "type": "nominal"}
+      },
+      "layer": [
+        {"mark": {"type":"line"}, "encoding": {"x":{"field":"date","type":"temporal", "timeUnit":"yearmonth"}},"transform": [{"filter":{"field":"data", "oneOf":["netdebt"]}}]},
+        {"mark": {"type":"line", "smooth":true}, "transform": [{"filter":{"field":"data", "oneOf":["gdp_year"]}}]},
+        {
+          "params": [{
+            "name": "label",
+            "select": {
+              "type": "point",
+              "encodings": ["x"],
+              "nearest": true,
+              "on": "mouseover"
+            }
+          }],
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "param": "label",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": {"param": "label", "empty": false}}],
+      "layer": [{
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {
+            "x": {"type": "temporal", "field": "date", "aggregate": "min"}
+          }
+        },
+        {
+          "encoding": {
+            "text": {"type": "quantitative", "aggregate": "mean", "field": "tgbp"},
+            "x": {"type": "temporal", "aggregate": "min", "field": "date"},
+            "y": {"type": "quantitative", "field": "tgbp"}
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "align": "left",
+                "dx": 10,
+                "dy": -10
+              }
+            },
+            {
+              "mark": {"type": "text", "align": "left", "dx": 10, "dy": -10},
+              "encoding": {
+                "color": {"type": "nominal", "field": "data"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+      
+    
+    ]  
+  }

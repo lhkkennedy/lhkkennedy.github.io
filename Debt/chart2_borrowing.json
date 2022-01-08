@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "UK energy consumption by source",
+
+  "title": {
+  "text": "UK Energy Trends - Inland Energy Consumption",
+  "subtitle": "DBEIS/ONS - (in Million tonnes of oil equivalent)",
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":10,
+  "anchor": "start",
+  "color": "black"
+},
+
+  "width": 300,
+  "height": 250,
+
+  "data": {
+    "url": "DeficitNet.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [{"filter": {"field": "type", "equal": "psnb"}}],
+  "params":[
+      {
+          "name": "hover",
+          "select": {"type": "point", "encodings": ["x"], "nearest":true, "on": "mouseover"}
+      }
+  ],
+  "encoding": {
+      "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "year",
+          "title": "Year",
+          "axis": {
+            "format": "%Y",
+            "ticks":false}},
+      "y": {"field": "milliongdp", "type": "quantitative", "title": "Million tonnes"},
+      "color": {
+          "condition": {
+              "param": "hover",
+              "type": "nominal"
+          },
+          "value": "grey"
+      },
+      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}},
+  "layer": [
+      {"mark":{"type": "bar", "tooltip":{"content": "encoding"}}}
+      
+  ]
+
+}
+  

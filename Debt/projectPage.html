@@ -1,0 +1,343 @@
+<!doctype html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/project/css/myStyle.css" />
+   <link rel="stylesheet" href="/project/css/parallax.css" />
+   <link rel="stylesheet" href="project.css"/>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+   <!-- Vega JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+
+</head>
+
+<body>
+   <!-- NAVBAR -->
+   <div id="navbar">
+      <a class="navbtn" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+   </div>
+   <!-- START OF PARALLAX CONTENT -->
+   <div class="parallax" id="parallax">
+      <div class="parallax__group">
+         <!-- Background Slider -->
+         <div class="parallax__layer parallax__layer--deep">
+            <!-- Background Slider -->
+            <section class="sect-banner">
+               <ul class="kf-slider">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+               </ul>
+            </section>
+         </div>
+         <!-- Vertically Centered Title Content -->
+         <div class="parallax__layer parallax__layer--back">
+            <section class="sect-banner">
+               <div class="v-center">
+                  <h1>Data Science Blog</h1>
+                  <p>Profiling the skills learnt on my university course</p>
+               </div>
+            </section>
+         </div>
+         <!-- Start of Content List -->
+         <div class="parallax__layer parallax__layer--base">
+            <!-- Grid -->
+            <div class="content-grid">
+               <div class="row">
+                  <!-- Blog entries -->
+                  <div class="col-blogEntry">
+                     <!-- Blog entry 1 -->
+                     <a name="anchor-1-Embedding"></a>
+                     <div class="card-blogEntry">
+
+                        <div class="blog-details">
+                           <h3><b>The UK owes a lot of money</b></h3>
+                           <h5>Understanding our public debt <span class="date"> Data Sciece project</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <br>
+                           <p>The governments across the globe in response to the COVID-19 pandemic have enacted massive spending packages financed by a lot of public debt. There is a question that many find hard to come up with an answer which is how can we afford all of this debt?</p>
+                           <p>Why does the UK owe £2.2 trillion or roughly £32,000 per capita in public sector debt. That's 103.6% of GDP for that financial year.</p>
+                           <a class="button js-cd-panel-trigger" data-panel="1-Debt-to-GDP"><b>SEE CHARTS
+                                 »</b></a>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Blog entry 2 -->
+                     <a name="anchor-2-Hosting"></a>
+                     <div class="card-blogEntry">
+                        <div class="blog-details">
+                           <h3><b>Hosting Data</b></h3>
+                           <h5>Week 3, <span class="date">11th October, 2021</span></h5>
+                        </div>
+                        <div id="firstChart" class="chart center">
+                           <script>
+                              var myChart1 = "chart1.json";
+                              vegaEmbed('#firstChart', myChart1);
+                           </script>
+                        </div>
+                        <div id="secondChart" style="display: inline-block" class="chart center">
+                           <script>
+                              var myChart2 = "chart2_borrowing.json";
+                              vegaEmbed('#secondChart', myChart2);
+                           </script>
+                        </div>
+                        <div id="thirdChart" style="display: inline-block" class="chart center">
+                           <script>
+                              var myChart3 = "chart3_deficit.json";
+                              vegaEmbed('#thirdChart', myChart3);
+                           </script>
+                        </div>
+                        <div id="fourthChart" class="chart center">
+                           <script>
+                              var myChart4 = "chart4_netDebt.json";
+                              vegaEmbed('#fourthChart', myChart4);
+                           </script>
+                        </div>
+
+                        <div class="blog-description">
+                           <strong>Tasks:</strong>
+                           <p>Embed two charts of own design</p>
+                           <p>a) from a given API</p>
+                           <p>b) from the same/related data saved to my GitHub</p>
+                           <a class="button js-cd-panel-trigger" data-panel="2-Hosting"><b>SEE CHARTS
+                                 >></b></a>
+                        </div>
+                     </div>
+                     <hr>
+
+                     <!-- END BLOG ENTRIES -->
+                  </div>
+                  <!-- Introduction Menu -->
+                  <div class="intro-menu">
+                     <div class="card-blogEntry"></div>
+                     <!-- About Card -->
+                     <div class="intro-card">
+                        <div class="intro-card-heading">
+                           <h4><b>My Data Science Course</b></h4>
+                        </div>
+                        <div class="about-card-text">
+                           <img class="profile-img" src="images/paranormal distribution.jpg">
+                           <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of
+                              love and a interest of lorem ipsum and mauris neque quam blog. I want to share
+                              my world with you.
+                           </p>
+                        </div>
+                     </div>
+                     <hr>
+                     <!-- Posts -->
+                     <div class="intro-card list">
+                        <div class="intro-card-heading">
+                           <h4><b>Top Posts</b></h4>
+                        </div>
+                        <ul class="ul-posts hoverable">
+                           <li>
+                              <a href="#anchor-1-Embedding">
+                                 <img src="images/1_Embedding.jpg" alt="Image">
+                                 <p>Embedding</p>
+                                 <p>Week 2</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-2-Hosting">
+                                 <img src="images/2_Hosting_Data.jpg" alt="Image">
+                                 <p>Hosting</p>
+                                 <p>Week 3</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-3-Editing">
+                                 <img src="images/3_Editing_Data.jpg" alt="Image">
+                                 <p>Editing</p>
+                                 <p>Week 4</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-4-API">
+                                 <img src="images/4_API.jpg" alt="Image">
+                                 <p>API</p>
+                                 <p>Week 5</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-5-Loops">
+                                 <img src="images/5_Loops.jpg" alt="Image">
+                                 <p>Loops</p>
+                                 <p>Week 6</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-6-Scraper">
+                                 <img src="images/6_Scraper.jpg" alt="Image">
+                                 <p>Scraper</p>
+                                 <p>Week 7</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-7-Data-Stories">
+                                 <img src="images/7_Data_Stories.jpg" alt="Image">
+                                 <p>Data Stories</p>
+                                 <p>Week 8</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-8-Analytics">
+                                 <img src="images/8_Advanced_Analytics.jpg" alt="Image">
+                                 <p>Advanced Analystics</p>
+                                 <p>Week 9</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#anchor-9-Interactivity">
+                                 <img src="images/9_Interactivity.jpg" alt="Image">
+                                 <p>Interactivity</p>
+                                 <p>Week 10</p>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- Labels / tags -->
+                     <div class="intro-card">
+                        <div class="intro-card-heading">
+                           <h4><b>Tags</b></h4>
+                        </div>
+                        <div class="about-card-text">
+                           <p>
+                              <a class="tag-button">HTML</a>
+                              <a class="tag-button">CSS</a>
+                              <a class="tag-button">API</a>
+                              <a class="tag-button">Data Science</a>
+                              <a class="tag-button">Charts</a>
+                           </p>
+                        </div>
+                     </div>
+                     <!-- End of Intro Menu -->
+                  </div>
+                  <!-- End of Row -->
+               </div>
+               <!-- End of Grid-->
+            </div>
+            <!-- Footer -->
+            <footer class="page-footer">
+               <button class="button-footer">« Previous</button>
+               <button class="button-footer">Next »</button>
+               <p>All References Here: <a href="html/reference_page.html">Link</a></p>
+            </footer>
+            <!-- End of Parallax Base Layer-->
+         </div>
+         <!-- End of Parallax Group -->
+      </div>
+      <!-- End of Parallax -->
+   </div>
+   <!-- 7. Data Stories  -->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-1-Debt-to-GDP">
+      <header class="cd-panel__header">
+         <h1>World: Debt to GDP ratio</h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div id="fifthChart" class="chart center">
+                     <script>
+                        var myChart5 = "chart5_debt-to-gdp.json";
+                        vegaEmbed('#fifthChart', myChart5);
+                     </script>
+                  </div>
+                  <div class="blog-details">
+                     <h3><b>Public Sector Debt</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <span class="date">December 2020 or 2021 data<br>
+                        <span class="date">Accessed on January 5th, 2021</span>
+                     </span>
+                     <h6>
+                        Where does the UK compare to the rest of the world in debt-to-GDP ratio?</h6>
+                     <h6>
+                        The UK can be seen 30th on the list and the US is 11th. The countries with highest debt-to-gdp ratios are countries such as Venezuela which holds 350% of GDP in public debt;  Japan at 266% of GDP; Sudan at 259% and Greece at 206%.</h6>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div class="blog-details">
+                     <h3><b>Scraper</b></h3>
+                  </div>
+                  <div class="blog-description">
+                     <h6>
+                        A python script was created to scrape the country name and their respective debt to gdp ratios that was displayed in a table at https://tradingeconomics.com/country-list/government-debt-to-gdp. The data was placed in a dataframe then formatted and exported as a csv file.
+                     </h6>
+                  </div>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">pandas</span> <span style="color: #007020; font-weight: bold">as</span> <span style="color: #0e84b5; font-weight: bold">pd</span>
+   <span style="color: #007020; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">requests</span>
+   <span style="color: #007020; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">os</span>
+   <span style="color: #007020; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">bs4</span> <span style="color: #007020; font-weight: bold">import</span> BeautifulSoup
+   
+   <span style="color: #60a0b0; font-style: italic">#downloading the source code for the URL then searching for a table</span>
+   URL <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;https://tradingeconomics.com/country-list/government-debt-to-gdp&quot;</span>
+   html <span style="color: #666666">=</span> requests<span style="color: #666666">.</span>get(URL)
+   soup <span style="color: #666666">=</span> BeautifulSoup(html<span style="color: #666666">.</span>content, <span style="color: #4070a0">&#39;html.parser&#39;</span>)
+   table <span style="color: #666666">=</span> soup<span style="color: #666666">.</span>find_all(<span style="color: #4070a0">&quot;table&quot;</span>, class_<span style="color: #666666">=</span><span style="color: #4070a0">&quot;table table-hover table-heatmap&quot;</span>)
+   <span style="color: #60a0b0; font-style: italic">#searching through the tables source code to find the rows.</span>
+   table_rows <span style="color: #666666">=</span> table[<span style="color: #40a070">0</span>]<span style="color: #666666">.</span>find_all(<span style="color: #4070a0">&#39;tr&#39;</span>)
+   
+   df <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>DataFrame()
+   <span style="color: #60a0b0; font-style: italic"># I iterate through the array of rows and extract the country names and values</span>
+   <span style="color: #60a0b0; font-style: italic"># Countries with multiple words required special treatment </span>
+   <span style="color: #60a0b0; font-style: italic"># They would take up multiple places in the row array shifting the value place</span>
+   <span style="color: #007020; font-weight: bold">for</span> tr <span style="color: #007020; font-weight: bold">in</span> table_rows:
+       s <span style="color: #666666">=</span> table_rows<span style="color: #666666">.</span>index(tr)
+       items <span style="color: #666666">=</span> tr<span style="color: #666666">.</span>text
+       <span style="color: #60a0b0; font-style: italic"># Split the text elements in each row text into an array</span>
+       arr <span style="color: #666666">=</span> items<span style="color: #666666">.</span>split()
+       extra <span style="color: #666666">=</span> <span style="color: #007020">len</span>(arr) <span style="color: #666666">-</span> <span style="color: #40a070">5</span>
+       country <span style="color: #666666">=</span> arr[<span style="color: #40a070">0</span>]
+       value <span style="color: #666666">=</span> arr[<span style="color: #40a070">1</span><span style="color: #666666">+</span>extra]
+       <span style="color: #60a0b0; font-style: italic"># If the coutntry name is longer than one word we loop until all words are joined.</span>
+       <span style="color: #007020; font-weight: bold">for</span> x <span style="color: #007020; font-weight: bold">in</span> <span style="color: #007020">range</span>(extra):
+           country <span style="color: #666666">=</span> country <span style="color: #666666">+</span> <span style="color: #4070a0">&#39; &#39;</span> <span style="color: #666666">+</span> arr[x<span style="color: #666666">+</span><span style="color: #40a070">1</span>]
+       results <span style="color: #666666">=</span> [country, value]
+       <span style="color: #007020">print</span>(results)
+       <span style="color: #60a0b0; font-style: italic"># The data is placed into a data frame to be formated</span>
+       df_t <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>DataFrame(results)
+       df_t<span style="color: #666666">.</span>columns <span style="color: #666666">=</span> [<span style="color: #4070a0">&#39;Data&#39;</span>]
+       df[s] <span style="color: #666666">=</span> df_t[<span style="color: #4070a0">&#39;Data&#39;</span>]
+   
+   <span style="color: #60a0b0; font-style: italic"># Transpose and remove the first row.</span>
+   df <span style="color: #666666">=</span> df<span style="color: #666666">.</span>T
+   df <span style="color: #666666">=</span> df<span style="color: #666666">.</span>iloc[<span style="color: #40a070">1</span>: , :]
+   df<span style="color: #666666">.</span>columns <span style="color: #666666">=</span> [<span style="color: #4070a0">&#39;Country&#39;</span>, <span style="color: #4070a0">&#39;Debt-to-GDP&#39;</span>]
+   <span style="color: #007020">print</span>(df)
+   
+   <span style="color: #60a0b0; font-style: italic">#save to csv</span>
+   filename <span style="color: #666666">=</span> <span style="color: #4070a0">&#39;Debt-to-GDP.csv&#39;</span>
+   abspath <span style="color: #666666">=</span> os<span style="color: #666666">.</span>path<span style="color: #666666">.</span>abspath(__file__)
+   dname <span style="color: #666666">=</span> os<span style="color: #666666">.</span>path<span style="color: #666666">.</span>dirname(abspath)
+   os<span style="color: #666666">.</span>chdir(dname)
+   filelocation <span style="color: #666666">=</span> os<span style="color: #666666">.</span>getcwd()
+   <span style="color: #007020">print</span>(<span style="color: #4070a0">&quot;Saving as:  [ &quot;</span> <span style="color: #666666">+</span> filename <span style="color: #666666">+</span> <span style="color: #4070a0">&quot; ]  in:  [ &quot;</span> <span style="color: #666666">+</span> filelocation <span style="color: #666666">+</span> <span style="color: #4070a0">&quot; ] &quot;</span>)
+   df<span style="color: #666666">.</span>to_csv(filename)
+   </pre></div>
+   
+               </div>
+               <hr>
+
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Resource JavaScript -->
+   <script src="/project/js/main.js"></script>
+</body>
+
+</html>
