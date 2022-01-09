@@ -13,7 +13,7 @@
   },
   
     "width":"container",
-    "height":350,
+    "height": 300,
   
     "data": {
       "url": "https://data.nasdaq.com/api/v3/datasets/BOE/IUDBEDR.csv?api_key=BZDJfBXG9Vi99jUcfmHz",
