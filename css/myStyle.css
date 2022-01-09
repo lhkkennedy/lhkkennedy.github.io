@@ -610,7 +610,6 @@ html {
   text-align: left;
   position: relative;
   font-size: 100%;
-  width: 100%;
   -webkit-text-size-adjust: 100%;
   background: none;
   -webkit-animation: fade-in ease-in-out 1.4s;
@@ -671,11 +670,11 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+
 .row {
   content:"";
   display: table;
   clear:both;
-  width: 100%;
   float: left;
   background-color: #353839;
 }
@@ -792,14 +791,13 @@ html {
   float: left;
   display: block;
 
-
 }
 
 .intro-card {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
+  margin-top: 15 px;
   margin-bottom: 15px;
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 }
