@@ -13,7 +13,7 @@
 },
 
   "width": "container",
-  "height": 250,
+  "height": 125,
 
   "data": {
     "url": "DeficitNet.csv",

@@ -4,8 +4,8 @@
     "description": "UK energy consumption by source",
   
     "title": {
-    "text": "UK Energy Trends - Inland Energy Consumption",
-    "subtitle": "DBEIS/ONS - (in Million tonnes of oil equivalent)",
+    "text": "Bank of England's Official Bank Rate",
+    "subtitle": "source: NASDAQ API - % interest",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -32,10 +32,10 @@
             "format": "%Y",
             "ticks":false}},
   
-        "y": {"field": "Value", "type": "quantitative", "title": "Trillion £"}
+        "y": {"field": "Value", "type": "quantitative", "title": "% Percentage"}
       },
       "layer": [
-        {"mark": {"type":"line"}},
+        {"mark": {"type":"line", "smooth": true}},
         {
           "params": [{
             "name": "label",

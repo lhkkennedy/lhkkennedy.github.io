@@ -79,14 +79,31 @@
     width:100% ;
   }
   .card-blogEntry.panel {
-    width: autp;
+    width: auto;
     padding-left: none;
     padding-right: none;
     margin-right: 0;
     margin-left: 0;
   }
 }
+.intro-menu {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
 
+.card-blogEntry {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 .row {
   width: 100%;
+}
+
+@media only screen and (min-width: 700px){
+  .col-blogEntry {
+    width: 100%;
+    float: left;
 }
