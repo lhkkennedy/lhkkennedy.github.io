@@ -4,8 +4,8 @@
     "description": "UK energy consumption by source",
   
     "title": {
-    "text": "UK Energy Trends - Inland Energy Consumption",
-    "subtitle": "DBEIS/ONS - (in Million tonnes of oil equivalent)",
+    "text": "Country List: net Debt % of GDP 2020",
+    "subtitle": "scraped data from [tradingeconomics.com]",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -13,7 +13,7 @@
   },
 
     "width": "container",
-    "height": 1500,
+    "height": 3000,
   
     "data": {
       "url": "Debt-to-GDP.csv",
@@ -32,10 +32,10 @@
             "title": "Year",
             "sort": {"field": "Debt-to-GDP", "order":"descending"},
             "axis": {
-                "labelFontSize": 6
+                "labelFontSize": 12
             }
         },
-        "x": {"field": "Debt-to-GDP", "type": "quantitative",  "title": "Million tonnes"},
+        "x": {"field": "Debt-to-GDP", "axis":{"orient": "top"}, "type": "quantitative",  "title": "Debt as % of GDP"},
         "color": {
             "condition": {
                 "param": "hover",
@@ -48,10 +48,10 @@
             {"field": "Debt-to-GDP"}, 
             {"field": "Country"}],
         "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}},
-        "transform": [ {"filter":{"field": "Debt-to-GDP", "gt":10}}, {"sort": [{"order":"descending", "field": "Debt-to-GDP"}], "window": [{"field": "Debt-to-GDP", "as": "rank", "op":"rank"}], "frame": [null, null]}], 
+        "transform": [ {"filter":{"field": "Debt-to-GDP", "gt":3}}, {"sort": [{"order":"descending", "field": "Debt-to-GDP"}], "window": [{"field": "Debt-to-GDP", "as": "rank", "op":"rank"}], "frame": [null, null]}], 
     "layer": [
         
-        {"mark":{"type": "bar", "tooltip":{"content": "encoding"}}}
+        {"mark":{"type": "bar", "width": 20, "tooltip":{"content": "encoding"}}}
         
     ]
 

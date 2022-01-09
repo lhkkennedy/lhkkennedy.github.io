@@ -67,3 +67,10 @@
           -webkit-animation: slider-lg ease-in-out 30s both infinite;
           -moz-animation: slider-lg ease-in-out 30s both infinite;
           animation: slider-lg ease-in-out 30s both infinite;}}
+
+.card-blogEntry.panel {
+  padding-top: 10px !important;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}

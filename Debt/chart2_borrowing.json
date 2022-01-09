@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "UK energy consumption by source",
+  "description": "UK net borrowing in £ Trillion",
 
   "title": {
-  "text": "UK Energy Trends - Inland Energy Consumption",
-  "subtitle": "DBEIS/ONS - (in Million tonnes of oil equivalent)",
+  "text": "UK Public Sector Net Borrowing",
+  "subtitle": "(excluding public sector banks) in £ Billion // ONS // (Jan 2000 - Dec 2020)",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "anchor": "start",
@@ -19,7 +19,7 @@
     "url": "DeficitNet.csv",
     "format": {"type": "csv"}
   },
-  "transform": [{"filter": {"field": "type", "equal": "psnb"}}],
+  "transform": [{"filter": {"field": "type", "equal": "psnb"}},{"calculate": "datum.milliongdp/1000", "as": "billionGBP"}],
   "params":[
       {
           "name": "hover",
@@ -34,8 +34,8 @@
           "title": "Year",
           "axis": {
             "format": "%Y",
-            "ticks":false}},
-      "y": {"field": "milliongdp", "type": "quantitative", "title": "Million tonnes"},
+            "ticks":false}},      
+      "y": {"field": "billionGBP", "type": "quantitative", "title": "Billion £ GBP"},
       "color": {
           "condition": {
               "param": "hover",

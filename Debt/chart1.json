@@ -1,11 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "description": "UK energy consumption by source",
+    "description": "UK yearly GDP vs net Public Sector Debt",
   
     "title": {
-    "text": "UK Energy Trends - Inland Energy Consumption",
-    "subtitle": "DBEIS/ONS - (in Million tonnes of oil equivalent)",
+    "text": "UK yearly GDP vs net Public Sector Debt",
+    "subtitle": "in £ Trillion // ONS // (Jan 2000 - Dec 2021)",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -36,7 +36,7 @@
             "format": "%Y",
             "ticks":false}},
   
-        "y": {"field": "tgbp", "type": "quantitative", "title": "Trillion £"},
+        "y": {"field": "tgbp", "type": "quantitative", "title": "Trillion £ GBP"},
         "color": {"field": "data", "type": "nominal"}
       },
       "layer": [
