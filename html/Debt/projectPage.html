@@ -62,9 +62,10 @@
                         </div>
                         <div class="blog-description">
                            <br>
-                           <p>Governments across the globe, in response to the COVID-19 pandemic, have enacted massive
-                              spending packages financed by a lot of public debt. A question often asked is: how is the
-                              government able to borrow so much cash and can the tax payers pay it all back</p><br>
+                           <p>Governments across the globe have enacted massive
+                              spending packages financed by a lot of public debt, in response to the COVID-19 pandemic.
+                              A question often asked is: how is the
+                              government able to borrow so much cash and can the tax payers pay it all back.</p><br>
                            <p>The UK owes £2.2 trillion or roughly £32,000 per person in public sector debts. It’s the
                               equivalent to 103.6% of GDP for the 2021 financial year. That’s a result of
                               high rates of public sector borrowing; they had borrowed £323.9 billion or 15.1% of GDP in
@@ -149,10 +150,13 @@
                            <h6>Austerity measures were introduced to help service the debt post-crash. However even
                               before the pandemic, levels of debt were still rising. This is because borrowing continued
                               for the 12 years leading up to the pandemic.
-                              However, some economist say that the austerity measures ultimately induced less spending
-                              and growth; culminating in less tax revenue to service the debt. (REF)
+                              Some economist say that the austerity measures amongst factors such as the eurozone
+                              crisis, culminated in less spending
+                              and growth; culminating in less tax revenues to service the debt. This was eventually
+                              reversed with substantial tax increases.<a
+                                 href="https://election2019.ifs.org.uk/article/tax-and-spending-since-the-crisis-is-austerity-over">(IFS,
+                                 2019)</a>
                            </h6>
-                           <br>
                            <h6>Leading governments have continued to borrow and spend at record levels as they and
                               central banks have begun adopted new thinking about how much they are able to borrow
                               sustainably. Central banks have supported the government’s fiscal efforts by increasing
@@ -198,25 +202,27 @@
                         <div class="blog-details">
                            <h3>References</h3>
                         </div>
-                        <div class="blog-description">
-                           <br>
-                           <p>first reference</p>
-                           <p>second reference</p>
+                        <div class="blog-description panel">
+                           <h5>Country List Government Debt to GDP,
+                              https://tradingeconomics.com/country-list/government-debt-to-gdp. <hr> Munro, Fraser. “UK
+                              Government Debt and Deficit: June 2021.” UK Government Debt and Deficit - Office for
+                              National Statistics, Office for National Statistics, 26 Oct. 2021,
+                              https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicspending/bulletins/ukgovernmentdebtanddeficitforeurostatmaast/june2021.
+                              <hr> “Public Sector Finance.” Public Sector Finance - Office for National Statistics,
+                              https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance#timeseries.
+                              <hr> Romei, Valentina. “UK Public Borrowing Drops Less than Expected on Covid Vaccination
+                              Costs.” Subscribe to Read | Financial Times, Financial Times, 19 Nov. 2021,
+                              https://www.ft.com/content/413904b2-f15e-4238-b96b-ae174916aa35. <hr> “Tax and Spending
+                              since the Crisis: Is Austerity over?” Topics,
+                              https://election2019.ifs.org.uk/article/tax-and-spending-since-the-crisis-is-austerity-over.
+                              <hr> Thomas, Abraham. “API for Interest Rate Data.” Nasdaq Data Link Blog, 30 Aug. 2021,
+                              https://blog.data.nasdaq.com/api-for-interest-rate-data.
+                           </h5>
                         </div>
 
                      </div>
-                     <!-- About Card -->
-                     <div class="intro-card">
-                        <div class="intro-card-heading">
-                           <h4><b>About</b></h4>
-                        </div>
-                        <div class="about-card-text">
-                           <p>This was a project for my Data Science module on my Economics BSc course at University of
-                              Bristol.
-                           </p>
-                        </div>
-                     </div>
                      <hr>
+
                      <!-- Posts -->
                      <div class="intro-card list">
                         <div class="intro-card-heading">
@@ -243,11 +249,27 @@
                            </li>
                            <li>
                               <a href="#anchor-4-Conclusion">
-                                 <h3>Conclusion</h3>
+                                 <h3>4. Conclusion</h3>
                                  <h4>Official Bank Rates from the Bank of England</h4>
                               </a>
                            </li>
                         </ul>
+                     </div>
+                     <!-- About Card -->
+                     <div class="intro-card">
+                        <div class="intro-card-heading">
+                           <h4><b>About</b></h4>
+                        </div>
+                        <div class="about-card-text">
+                           <p>This was a project for my Data Science module on my Economics BSc course at University of
+                              Bristol. the Key marking criteria were:
+                           </p>
+                           <p>1. Acessibility</p>
+                           <p>2. Empirical Design</p>
+                           <p>3. Automation</p>
+                           <p>4. Impact</p>
+                           <p>5. Description</p>
+                        </div>
                      </div>
                      <!-- Labels / tags -->
                      <div class="intro-card">
@@ -421,6 +443,7 @@
                   <div class="blog-details">
                      <h3><b>Public Sector Current Budget Deficit and Net Borrowing</b></h3>
                   </div>
+                  <br>
                   <div class="blog-description panel">
                      <span class="date">December 2020 or 2021 data<br>
                         <span class="date">Accessed on January 5th, 2021</span>
@@ -429,7 +452,8 @@
                         Time series data was sourced the from ONS:
                         https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/
                         publicsectorfinance#timeseries</h6>
-                     <h6>The dataset was reshaped to a long format with STATA.</h6>
+                     <h6>The time series' came in seperate files. After joining them together the dataset was reshaped
+                        to a long format with STATA.</h6>
                      <h6>The command:</h6>
                      <div
                         style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
@@ -452,7 +476,7 @@ dname <span style="color: #666666">=</span> os<span style="color: #666666">.</sp
 os<span style="color: #666666">.</span>chdir(dname)
 
 
-filename <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;DebtGDP.csv&quot;</span>
+filename <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;DataSet.csv&quot;</span>
 df <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>read_csv(filename)
 qs <span style="color: #666666">=</span> df[<span style="color: #4070a0">&#39;date&#39;</span>]<span style="color: #666666">.</span>str<span style="color: #666666">.</span>replace(<span style="color: #4070a0">r&#39;(\d+) (Q\d)&#39;</span>, <span style="color: #4070a0">r&#39;\1-\2&#39;</span>)
 df[<span style="color: #4070a0">&#39;date&#39;</span>] <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>PeriodIndex(qs, freq<span style="color: #666666">=</span><span style="color: #4070a0">&#39;Q&#39;</span>)<span style="color: #666666">.</span>to_timestamp()
