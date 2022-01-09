@@ -12,7 +12,7 @@
     "color": "black"
   },
   
-    "width":500,
+    "width":"container",
     "height":350,
   
     "data": {

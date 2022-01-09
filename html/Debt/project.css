@@ -8,6 +8,7 @@
     }
   }
   
+
   .parallax__layer--deep {
     transform: translateZ(-2px) translateY(-50%) scale(3);
     -webkit-transform: translateZ(-2px) translateX(-20px) translateY(50%) scale(3);
@@ -71,6 +72,21 @@
 .card-blogEntry.panel {
   padding-top: 10px !important;
   padding-left: 40px;
-  padding-right: 40px;
   padding-bottom: 40px;
+}
+@media only screen and (max-width: 550px) {
+  .col-blogEntry {
+    width:100% ;
+  }
+  .card-blogEntry.panel {
+    width: autp;
+    padding-left: none;
+    padding-right: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.row {
+  width: 100%;
 }

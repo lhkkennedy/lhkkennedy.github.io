@@ -18,8 +18,9 @@
    <!-- NAVBAR -->
    <div id="navbar">
       <a class="navbtn" href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
+      <a href="html/Debt/projectpage.html">Project</a>
+      <a href="/project/index.html">Blog Profile</a>
+      <a href="html/references.html">References</a>
    </div>
    <!-- START OF PARALLAX CONTENT -->
    <div class="parallax" id="parallax">
@@ -75,18 +76,7 @@
                            <h3><b>Hosting Data</b></h3>
                            <h5>Week 3, <span class="date">11th October, 2021</span></h5>
                         </div>
-                        <div id="sixthChart" class="chart center">
-                           <script>
-                              var myChart6 = "chart6_bankrate.json";
-                              vegaEmbed('#sixthChart', myChart6);
-                           </script>
-                        </div>
-                        <div id="firstChart" class="chart center">
-                           <script>
-                              var myChart1 = "chart1.json";
-                              vegaEmbed('#firstChart', myChart1);
-                           </script>
-                        </div>
+
                         <div id="secondChart" style="display: inline-block" class="chart center">
                            <script>
                               var myChart2 = "chart2_borrowing.json";
@@ -99,13 +89,6 @@
                               vegaEmbed('#thirdChart', myChart3);
                            </script>
                         </div>
-                        <div id="fourthChart" class="chart center">
-                           <script>
-                              var myChart4 = "chart4_netDebt.json";
-                              vegaEmbed('#fourthChart', myChart4);
-                           </script>
-                        </div>
-
                         <div class="blog-description">
                            <strong>Tasks:</strong>
                            <p>Embed two charts of own design</p>
@@ -117,6 +100,41 @@
                      </div>
                      <hr>
 
+                     <!-- Blog entry 3 -->
+                     <a name="anchor-3-net-debt"></a>
+                     <div class="card-blogEntry">
+
+                        <div class="blog-details">
+                           <h3><b>The UK owes a lot of money</b></h3>
+                           <h5>Understanding our public debt <span class="date"> Data Sciece project</span></h5>
+                        </div>
+                        <div class="blog-description">
+                           <br>
+                           <p>Governments across the globe in response to the COVID-19 pandemic have enacted massive spending packages financed by a lot of public debt. A question often asked is: how is the government able to borrow so much cash and can the tax payers pay it back</p><br>
+                           <p>Why does the UK owe £2.2 trillion or roughly £32,000 per person in public sector debt ? That's 103.6% of GDP for the 2021 financial year(ONS, 2021). How can the government afford to acrew massive amounts of debt and is there a limit? This project explores through a number of visualisations the state of the UK's public sector debt.</p> <br>
+                           <p></p>
+                           <a class="button js-cd-panel-trigger" data-panel="1-Debt-to-GDP"><b>See More »</b></a>
+                        </div>
+                        <div id="sixthChart" class="chart center">
+                           <script>
+                              var myChart6 = "chart6_bankrate.json";
+                              vegaEmbed('#sixthChart', myChart6);
+                           </script>
+                        </div>
+                        <div id="firstChart" class="chart center">
+                           <script>
+                              var myChart1 = "chart1.json";
+                              vegaEmbed('#firstChart', myChart1);
+                           </script>
+                        </div>
+                        <div id="fourthChart" class="chart center">
+                           <script>
+                              var myChart4 = "chart4_netDebt.json";
+                              vegaEmbed('#fourthChart', myChart4);
+                           </script>
+                        </div>
+                     </div>
+                     <hr>
                      <!-- END BLOG ENTRIES -->
                   </div>
                   <!-- Introduction Menu -->

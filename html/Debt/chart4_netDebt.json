@@ -1,22 +1,22 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "description": "UK yearly GDP vs net Public Sector Debt",
+    "description": "UK energy consumption by source",
   
     "title": {
-    "text": "UK yearly GDP vs net Public Sector Debt",
-    "subtitle": "in £ Trillion // ONS // (Jan 2000 - Dec 2021)",
+    "text": "UK Energy Trends - Inland Energy Consumption",
+    "subtitle": "DBEIS/ONS - (in Million tonnes of oil equivalent)",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"
   },
   
-    "width":300,
+    "width":"container",
     "height":350,
   
     "data": {
-      "url": "DebtandGDP.csv",
+      "url": "DebtGDP.csv",
       "format": {"type": "csv"}
     },
   
@@ -36,12 +36,11 @@
             "format": "%Y",
             "ticks":false}},
   
-        "y": {"field": "tgbp", "type": "quantitative", "title": "Trillion £ GBP"},
-        "color": {"field": "data", "type": "nominal"}
+        "y": {"field": "debtgdp", "type": "quantitative", "title": "Trillion £"},
+        "color": {"field": "data", "type": "nominal", "title": null, "legend": null}
       },
       "layer": [
-        {"mark": {"type":"line"}, "encoding": {"x":{"field":"date","type":"temporal", "timeUnit":"yearmonth"}},"transform": [{"filter":{"field":"data", "oneOf":["netdebt"]}}]},
-        {"mark": {"type":"line", "smooth":true}, "transform": [{"filter":{"field":"data", "oneOf":["gdp_year"]}}]},
+        {"mark": {"type":"line"}},
         {
           "params": [{
             "name": "label",
@@ -76,9 +75,9 @@
         },
         {
           "encoding": {
-            "text": {"type": "quantitative", "aggregate": "mean", "field": "tgbp"},
+            "text": {"type": "quantitative", "aggregate": "mean", "field": "debtgdp"},
             "x": {"type": "temporal", "aggregate": "min", "field": "date"},
-            "y": {"type": "quantitative", "field": "tgbp"}
+            "y": {"type": "quantitative", "field": "debtgdp"}
           },
           "layer": [
             {
@@ -87,12 +86,12 @@
                 "stroke": "white",
                 "strokeWidth": 2,
                 "align": "left",
-                "dx": 10,
+                "dx": -40,
                 "dy": -10
               }
             },
             {
-              "mark": {"type": "text", "align": "left", "dx": 10, "dy": -10},
+              "mark": {"type": "text", "align": "left", "dx": -40, "dy": -10},
               "encoding": {
                 "color": {"type": "nominal", "field": "data"}
               }
