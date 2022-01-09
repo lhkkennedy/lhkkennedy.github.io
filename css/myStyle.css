@@ -683,7 +683,7 @@ html {
 
 .card-blogEntry{
   padding: 40px;
-  margin: 40px;
+  margin: 20px;
   color: black;
   background-color: white;
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
@@ -1008,3 +1008,6 @@ a{
   }
 }
 
+.button-footer a{
+  text-decoration: none;
+}
