@@ -434,7 +434,6 @@ html {
       animation: fade-in ease-in-out 2s 0.5s both;
       font-weight: bolder;
       color: antiquewhite;}
-    }
     .sect-banner .v-center p {
       font-size: 100%;
       -webkit-animation: fade-in ease-in-out 2s 0.5s both;
@@ -800,7 +799,8 @@ html {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 }
 
