@@ -664,6 +664,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px !important;
 }
 
 .chart.panel{
@@ -999,8 +1001,10 @@ a{
 
 @media only screen and (max-width: 550px) {
   .card-blogEntry.panel{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 30px;
+    padding-right: 20px;
     width: auto;
   }
 }
