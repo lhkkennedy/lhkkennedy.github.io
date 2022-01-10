@@ -9,7 +9,7 @@
     "anchor": "start",
     "color": "black"
   },
-  "width": 300,
+  "width": "container",
   "height": 350,
   "data": {
     "url": "html/json/7_Data_Stories/UKenergyProduction.csv",

@@ -10,7 +10,7 @@
       "color": "white"
     },
   
-    "width": 300,
+    "width": "container",
     "height": 350,
   
     "data": {"url": "html/json/4_API/FREDdata_UNRATE.json",

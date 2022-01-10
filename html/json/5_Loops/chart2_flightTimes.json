@@ -13,7 +13,7 @@
     },
     
     "height": 300,
-    "width": 300,
+    "width": "container",
 
     "data": {
       "url": "html/json/5_Loops/data2_flightTimes.csv",
