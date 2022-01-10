@@ -174,9 +174,9 @@
                      <!-- Blog entry 8 -->
                      <a name="anchor-8-Analytics"></a>
                      <div class="card-blogEntry">
-                        <img class="blog-thumbnail" src="images/8_Advanced_Analytics.jpg" alt="">
+                        <img class="blog-thumbnail" src="images/8_Advanced.jpg" alt="">
                         <div class="blog-details">
-                           <h3><b>Advanced Analystics</b></h3>
+                           <h3><b>Advanced Analytics</b></h3>
                            <h5>Week 9, <span class="date">22nd November, 2021</span></h5>
                         </div>
                         <div class="blog-description">
@@ -282,7 +282,7 @@
                            </li>
                            <li>
                               <a href="#anchor-8-Analytics">
-                                 <img src="images/8_Advanced_Analytics.jpg" alt="Image">
+                                 <img src="images/8_Advanced.jpg" alt="Image">
                                  <p>Advanced Analystics</p>
                                  <p>Week 9</p>
                               </a>
@@ -319,7 +319,7 @@
             </div>
             <!-- Footer -->
             <footer class="page-footer">
-               <button class="button-footer"><a href="html/references.html">« Previous</a></button>
+               <button class="button-footer"><a href="html/Debt/projectPage.html">« Previous</a></button>
                <button class="button-footer"><a href="html/Debt/projectPage.html">Next »</a></button>
                <p>All References Here: <a href="html/reference_page.html">Link</a></p>
             </footer>
@@ -1222,6 +1222,121 @@ export delimited using <span style="color: #4070a0">&quot;UkenergyProduction&quo
          </div>
       </div>
    </div>
+
+
+   <!-- 8. Advanced Analytics -->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-8-Advanced">
+      <header class="cd-panel__header">
+         <h1>small interest rates</h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div class="blog-details">
+                     <h3><b>Data Analytics</b></h3>
+                     <span class="date">Multiple sources<br>
+                        <span class="date">22nd November, 2021</span>
+                  </div>
+                  <div class="blog-description panel">
+                     <h6>
+                        Using the vega layer operator we can superimpose one chart over the other. We can assign a seperate data url to each chart to allow us to make multiple API calls and chart data from two seperate sources together.</h6><br>
+                  </div>
+                  <div id="sixteenthChart" class="chart center">
+                     <script>
+                        var myChart16 = "html/json/8_Advanced_Analytics/chart1_multipleSources.json";
+                        vegaEmbed('#sixteenthChart', myChart16);
+                     </script>
+                  </div>
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div class="blog-details">
+                     <h3><b>Regressions</b></h3>
+                  </div>
+                  <div class="blog-description panel">
+                     <h6>
+                        Below is chart to show you can use the vega spec to do some further statistical anlysis with your data.</h6>
+                  <div id="twentiethChart" class="chart center">
+                     <script>
+                        var myChart20 = "html/json/8_Advanced_Analytics/chart2_regression.json";
+                        vegaEmbed('#twentiethChart', myChart20);
+                     </script>
+                  </div>
+               </div>
+               </div>
+               <hr>
+
+               </div>
+               <hr>               
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- 9. Interactivity -->
+   <div class="cd-panel cd-panel--from-right js-cd-panel-9-Interactivity">
+      <header class="cd-panel__header">
+         <h1>Interactive charts</h1>
+         <a href="#0" class="cd-panel__close js-cd-close">Close</a>
+      </header>
+      <div class="cd-panel__container">
+         <div class="cd-panel__content">
+            <div class="col-blogEntry panel">
+               <!-- Blog entry 1 -->
+               <div class="card-blogEntry panel">
+                  <div class="blog-details">
+                     <h3><b>Interactivity</b></h3>
+                     <span class="date">user input<br>
+                  </div>
+                  <div class="blog-description panel">
+                     <h6>
+                        Below are some charts from last week that have had features added to them. Interactive charts allows the user to select what information they way to be presented with.</h6>
+
+                     <div id="seventeenthChart" class="chart center">
+                        <script>
+                           var myChart17 = "html/json/9_Interactivity/chart2_Interactive.json";
+                           vegaEmbed('#seventeenthChart', myChart17);
+                        </script>
+                     </div>
+                     <br>
+                     <div id="eighteenthChart" class="chart center">
+                        <script>
+                           var myChart18 = "html/json/9_Interactivity/chart3_Interactive.json";
+                           vegaEmbed('#eighteenthChart', myChart18);
+                        </script>
+                     </div>
+                     <br>
+                  </div>
+
+               </div>
+               <hr>
+               <!-- Blog entry 2 -->
+               <div class="card-blogEntry panel">
+                  <div class="blog-details">
+                     <h3><b>Tooltip feature</b></h3>
+                  </div>
+                  <div class="blog-description panel">
+                     <div id="nineteenthChart" class="chart center">
+                        <script>
+                           var myChart19 = "html/json/9_Interactivity/chart4_Interactive.json";
+                           vegaEmbed('#nineteenthChart', myChart19);
+                        </script>
+                     </div>
+                  </div>
+
+               </div>
+               <hr>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
    <!-- Resource JavaScript -->
    <script src="js/main.js"></script>
 </body>

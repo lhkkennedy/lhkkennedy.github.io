@@ -4,8 +4,8 @@
     "description": "Share of Total Assets Held by the Top 1% and the Bottom 50% from 1989 to 2021",
   
     "title": {
-    "text": "% Share of Total Assets",
-    "subtitle": "Assets Held by the Top 1% (red) - Assets Held by the Bottom 50% (gray)",
+    "text": "UK Energy Trends - Inland Energy Consumption",
+    "subtitle": "DBEIS/ONS - (in Million tonnes of oil equivalent)",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -24,7 +24,7 @@
     {
       "encoding": {
         "x": {"field": "date", "type": "temporal", "timeUnit": "yearmonth", "axis": {"format": "%Y", "labelOverlap": "greedy","labelSeparation": 24,"ticks":false}},
-        "y": {"field": "Mt", "aggregate": "mean"},
+        "y": {"field": "Mt", "title": "Million tonnes", "aggregate": "mean"},
         "color": {"field": "type", "type": "nominal"}
       },
       "layer": [
