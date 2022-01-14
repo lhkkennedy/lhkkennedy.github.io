@@ -36,7 +36,7 @@
             "format": "%Y",
             "ticks":false}},
   
-        "y": {"field": "debtgdp", "type": "quantitative", "title": "Trillion £"},
+        "y": {"field": "debtgdp", "type": "quantitative", "title": "Percent %"},
         "color": {"field": "data", "type": "nominal", "title": null, "legend": null}
       },
       "layer": [
